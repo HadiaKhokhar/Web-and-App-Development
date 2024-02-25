@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hadia Khokhar">
+    <meta name="keywords" content="Travel agency, Group traveling agency, Group travelers, Together Travel registration form, 
+    Registration form,Travel Form,Personal details ">
+    <meta name="descrition" content="Page of Personal detail Form ">
+    <link rel="stylesheet" href="styling/style.css" type="text/css">
+    <link rel="icon" href="Assests/plane.png" type="image/x-icon">
+    <title>Personal Detail | Together Travel</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h2 class="off">Registration</h2>
+        <h2 class="on">Personal Details</h2>
+        <h2 class="off">Travel Information</h2>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div class="formbody">
+          <form action="example.php" method="post" >
+            <!-- Name -->
+            <p>Name<br>
+              <label for="firtsname">First Name:</label><input type="text" name="firstname" id="firstname" maxlength="10" 
+              size="10" title="Enter Your First Name in this Field" placeholder="Emily"  required autofocus>
+              <br><label for="lastname">Last Name:</label><input type="text" name="lastname" id="lastname" maxlength="10" 
+              size="10" title="Enter Your Last Name in this Field" placeholder="Rose" required>
+            </p>
+            <!-- telephone -->
+            <p>
+              <label for="telphone">Phone Number:</label>
+              <input type="tel" name="phonenumber" id="phonenumber" pattern="[0-9]{3},[0-9]{3},[0-9]{4}" placeholder="999 999 9999"
+              title="Enter your phone with your country code" maxlength="12" required >
+            </p>
+            <!-- CNIC -->
+            <p>
+              <label>CNIC:</label><br>
+              <input type="number" name="n1" id="n1"   min="0" max="9" required class="box-feild">
+              <input type="number" name="n2 " id="n2" min="0" max="9" required class="box-feild">
+              <input type="number" name="n3" id="n1" min="0" max="9" maxlength="1" required class="box-feild">
+              <input type="number" name="n4" id="n4" min="0" max="9" maxlength="1" required class="box-feild"> 
+              <input type="number" name="n5" id="n5" min="0" max="9" maxlength="1" required class="box-feild">
+              <input type="number" name="n6" id="n6" min="0" max="9" maxlength="1" required class="box-feild">
+              <input type="number" name="n8" id="n8" min="0" max="9" maxlength="1" required class="box-feild">
+              <input type="number" name="n9" id="n9" min="0" max="9" maxlength="1" required class="box-feild">
+              <input type="number" name="n10" id="n10" min="0" max="9" maxlength="1" required class="box-feild">
+              <input type="number" name="n11" id="n11" min="0" max="9" maxlength="1" required class="box-feild">
+              <input type="number" name="n12" id="n12" min="0" max="9" maxlength="1" required class="box-feild">
+            </p>
+            <!-- For Date of Birth -->
+            <p>
+              <label for="birthdate">Date of Birth:</label>
+              <input type="date" name="birthdate" id="birthdate" required>
+            </p>
+            <!-- FOR address -->
+            <p>
+              Address<br>
+              <label for="streetaddress">Street Address:</label>
+              <input type="line" name="streetaddress" id="streetaddress" size="200" placeholder="Enter your Street Address" title="Enter your Street Address here" required >
+              <br><label for="city">City:</label><br>
+              <input type="text" name="city" id="city"  placeholder="Enter your City Name" required>
+              <br><label for="provice">Province:</label><br>
+              <input type="text" name="province" id="province"  placeholder="Enter your Province Name" required>
+            </p>
+            <br>
+          </form>
+          <a href="Travel-information.html" title="Go to Next Page" class="button"><button>Next</button></a>
+          <br><br>
+          <a href="registration.html"  title="Back to Registration" class="button"><button>Back</button></a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hadia Khokhar">
+    <meta name="keywords" content="Travel agency, Group traveling agency, Group travelers, Together Travel registration form, Registration form,Travel Form,Travel information ">
+    <meta name="descrition" content="Page of Travel Information Form for Travel Services">
+    <link rel="stylesheet" href="styling/style.css" type="text/css">
+    <link rel="icon" href="Assests/plane.png" type="image/x-icon">
+    <title>Travel Information | Together Travel</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h2 class="off">Registration</h2>
+        <h2 class="off">Personal Details</h2>
+        <h2 class="on">Travel Information</h2>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div class="formbody">
+          <form action="example.php" method="post">
+            <!-- Travel date -->
+            <p>
+              <label for="traveldate">Travel Date:</label>
+              <input type="date" name="traveldate" id="traveldate" required>
+            </p>
+            <!-- Destitnation -->
+            <p>
+              <label for="destination">Destination:</label>
+              <input type="text" name="destination" id="destination"  placeholder="Enter your Destination" required> 
+            </p>
+
+            <!-- Budget -->
+            <p>
+              <label for="budget">Realistic Budge $:</label>
+              <input type="number" name="budget" id="budget" min="100" max="10000"  required >
+            </p>
+            <!-- Number of People -->
+            <p>
+              <label for="num-of-people">Number of People: </label>
+              <input type="number" name="num-of-people" id="num-of-people" min="2" max="20" required>
+            </p>
+            <p>
+              <label for="other-services" >Other Services Needed:</label>
+              <select name="other-services" id="other-services" multiple size="1">
+                <option value="flightsonly" >Flights Only</option>
+                <option value="rental car">Rental Car</option>
+                <option value="hotel/resorts">Hotel/Resorts</option>
+                <option value="entertainment">Entertainment</option>
+              </select>
+            </p>
+            <p>
+              <label for="message">Message Us:</label><br>
+              <textarea name="message" id="message" cols="30" rows="15" placeholder="Write your Message here!" required></textarea>
+            </p>
+            <div class="button">
+            <button type="submit" >Submit</button>
+            </div>
+          </form>
+          <br><br>
+          <a href="personal-detail.html"  title="Back to Personal Detail Form" class="button"><button>Back</button></a>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
