@@ -1,0 +1,362 @@
+<!-- Elements Learned : 
+    CHAPTER_2 : Body ,line break , Strong, emphasis, Abreviations, Address, spaces, greater and lesser than sign, copyright symbols 
+    CHAPTER_4 : Lists(Unordered, Ordered, Defination lists)
+    CHAPTER_5 : Links(to the other webpage using absolute URL, going to webpage in same folder using relative URL, going to specific 
+                part of your webpage using id and sector, downloading the resources by link)
+    CHAPTER_6 : Image tag and its attributes, figure tag, code tag
+    CHAPTER_7 : Semantic tags (header, footer, body, nav, aside, summary, detail mark, time ,article , section)
+    CHAPTER_8 : Forms-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width,initial-scale=0.1" >
+    <link rel="icon" href="Assests/icon.png" >
+    <link rel="stylesheet" href="main.css" >
+    <title>My First Page</title>
+    
+  </head>
+
+  <body>
+    <header>
+      <h1>MY PLANNER</h1>
+      <hr>
+      <nav aria-label="topics-navigation">
+        <h3><b>For Easy Access:</b></h3>
+        <ul>
+          <li><a href="#learning-html">Learning HTML</a></li>
+          <li><a href="#mid-terms-preparation">Mid-terms Schedule</a></li>
+          <li><a href="#author-information">About Author</a></li>
+          <li><a href="#contact-me">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+    <main>
+      <article id="learning-html">
+        <h2>I am ready to Learn HTML</h2>
+        <p>This is my first web page.</p>
+        <section>
+          <figure>
+            <img alt="HTML-5-logo" src="Assests/html_logo.png" >
+            <figcaption>A HTML logo</figcaption>
+            <p>This is my first code that i have written:</p>
+            <code>
+              &lt;html&gt;<br>
+              &nbsp;&lt;head&gt;<br >
+              &nbsp;&lt;/head&gt;<br >
+              &nbsp;&lt;body&gt;<br >
+              &nbsp;&nbsp;&lt;h1&gt;This is heading&lt;/h1&gt;<br>
+              &nbsp;&lt;/body&gt;<br>
+              &lt;/html&gt;
+            </code>
+          </figure>
+        </section>
+        <section>
+          <h3>My daily Schedule for learining HTML:</h3>
+          <ul>
+            <li>
+              daily Schedule for learining
+              <abbr title="Hyper Text Markup Language">HTML</abbr> is to watch <time datetime="PT45M"> 45 min</time> lecture video
+            </li>
+            <li>
+              Practice my coding skill that i learned so far for 30 min daily.
+            </li>
+            <li>
+              I use <a href="https://www.w3schools.com/">W3School</a> for
+              Practicing my HTML Coding Skill
+            </li>
+            <li>
+              This is the link of the web-page i have made so far<br >
+              <a href="about.html#page-start" target="_blank"
+                >My first Web Page</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h4><strong>Remember:</strong></h4>
+          <p>
+            <em>Best</em> ways to grab your skills into coding is to
+            <strong>practice , practice and practice!</strong>
+          </p>
+          <!-- It's typically used for content like sidebars, pull quotes, or information that
+          is not directly related to the main content but provides additional context or supplementary information. -->
+          <aside>
+          <!-- The <details> element is used to create a disclosure widget that can be toggled open or closed to reveal or 
+          hide content. The visible part of the widget, which is always visible even when the content is collapsed, is 
+          marked up using the <summary> element.This is commonly used for creating collapsible sections of content, such 
+          as FAQs, where users can expand sections to view additional information. -->
+            <details>
+              <summary>Do you know who was the <mark>first Programmer</mark>  in the worldr?</summary>
+              <p>
+                The first computer programmer is widely considered to be <mark>Ada Lovelace</mark> ,
+                an English mathematician and writer who lived in the 19th century. 
+                She wrote the first algorithm for a machine that was never built, 
+                the Analytical Engine3, designed by Charles Babbage. She also foresaw the
+                potential of computers to perform more than just calculations, such as 
+                creating music or art. She was a visionary and a pioneer in the field of 
+                computing. 🙌
+              </p>
+            </details>
+          </aside>
+        </section>
+
+      </article>
+
+      <hr>
+
+      <article id="mid-terms-preparation">
+        <h2>I am also Preparing for my Mid-terms</h2>
+        <img
+          alt="image-of-hermoine-granger-with-a-quote"
+          src="Assests/hermoine-granger.jpg"
+          width="300"
+          title="study-motivation-quote"
+          loading="lazy"
+        >
+        <h3>My Weekly Rountine for Preparation:</h3>
+        <ul>
+          <li>
+            <b>Monday and Tuesday: </b>
+            <ol>
+              <li>
+                Math<br><img
+                  src="Assests/maths.jpg"
+                  alt="math-backgrond"
+                  width="300"
+                >
+              </li>
+            </ol>
+          </li>
+          <li>
+            <b>Wednesday and Thursday: </b>
+            <ol>
+              <li>
+                English<br ><img
+                  src="Assests/english.jpg"
+                  alt="english-backgrond"
+                  width="300"
+                >
+              </li>
+              <li>
+                Urdu<br><img
+                  src="Assests/urdu.jpg"
+                  alt="urdu-backgrond"
+                  width="300"
+                >
+              </li>
+              <li>
+                Islamiyat<br><img
+                  src="Assests/Islamiat.jpg"
+                  alt="islamiyat-backgrond"
+                  width="300"
+                >
+              </li>
+            </ol>
+          </li>
+          <li>
+            <b>Friday and Saturday: </b>
+            <ol>
+              <li>
+                Physics<br><img
+                  src="Assests/physics.jpg"
+                  alt="physics-backgrond"
+                  width="300"
+                >
+              </li>
+              <li>
+                Computer<br><img
+                  src="Assests/computer.jpg"
+                  alt="computer-backgrond"
+                  width="300"
+                >
+              </li>
+            </ol>
+          </li>
+          <li>
+            <b>Sunday: </b>
+            <ul>
+              <li>FUN DAY! 😀</li>
+            </ul>
+          </li>
+        </ul>
+      <section>
+
+        <h3>Time Table</h3>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col" >Day</th>
+              <th scope="col" colspan="3" >Subjects</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <th scope="col">Monday</th>
+            <td rowspan="2" colspan="3" >Math</td>
+            </tr>
+            <tr>
+              <th scope="col">Tuesday</th>
+            </tr>
+            <tr>
+              <th scope="col">Wednesday</th>
+              <td rowspan="2">English</td>
+              <td rowspan="2">Urdu</td>
+              <td rowspan="2">Islamiyat</td>
+            </tr>
+            <tr>
+              <th scope="col">Thursday</th>
+            </tr>
+            <tr>
+              <th scope="col">Friday</th>
+              <td rowspan="2">Computer Science</td>
+              <td rowspan="2" colspan="2">Physics</td>
+            </tr>
+            <tr>
+              <th scope="col">Saturday</th>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="col">Sunday</th>
+              <td colspan="3" >FUN DAY</td>
+            </tr>
+        </tfoot>
+
+        </table>
+      </section>  
+      </article>
+      <hr>
+      <article id="#contact-me">
+        <h2>Contact Me</h2>
+        <p>I really like to hear from you and if you want some study tips you can contact me! </p>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <p>
+              <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Dave" autocomplete="on" required autofocus>
+            </p>
+            <p>
+              <label for="lastName">Last Name:</label>
+              <input type="text" name="lastName" id="lastName" placeholder="Grey" autocomplete="on" required >  
+            </p>
+            <p>
+              <label for="password">Password: </label>
+              <input type="password" name="password" id="password" placeholder="Enter your Password" required >  
+            </p>
+            <p>
+              <label for="phone">Phone Number: </label>
+              <input type="tel" name="phone" id="phone" placeholder="(XXX) XXX-XXXX " pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required >  
+            </p>
+            <p>
+              <label for="decade">Favorite Decade: </label>
+              <input type="number" name="decade" id="decade" min="1950" max="2023" step="10" value="1980" required >  
+            </p>
+            <p>
+              <label for="coffee">Favorite Coffee: </label>
+              <select name="coffee" id="coffee"  size="1"   required>
+                <optgroup label="Coffees">
+                  <option value="regularcoffee">Regular Coffee</option>
+                  <option value="icedcoffee">Iced Coffee</option>
+                </optgroup>
+                <optgroup  label="Espresso">
+                  <option value="capppuccino">Capppuccino</option>
+                  <option value="latte" selected >Latte</option>
+                  <option value="cortado">Cortado</option>
+                  <option value="americano">Americano</option>
+                </optgroup>
+                <option value="other">Other</option>
+              </select>  
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>FAVOURITE FOOD</legend>
+          <p>
+            <label for="food">What's Your Favourite Food?</label><br>
+            <input type="radio" name="food" value="biryani" id="biryani">
+            <label for="biryani">Biryani</label><br>
+            <input type="radio" name="food" value="nihari" id="nihari">
+            <label for="nihari">Nihari</label><br>
+            <input type="radio" name="food" value="pulao" id="pulao">
+            <label for="pulao">Pulao</label><br>
+            <input type="radio" name="food" value="alugosht" id="alugosht">
+            <label for="alugosht">Alu Gosht</label>
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>ABOUT PETS</legend>
+          <label for="pet">Do you have pets?</label>
+          <p>
+          <input type="checkbox" name="pet" value="dog" id="dog">
+          <label for="dog">Dog</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pet" value="cat" id="cat">
+            <label for="cat">Cat</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pet" value="parrot" id="parrot">
+            <label for="parrot">Parrot</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pet" value="otherpet" id="otherpet">
+            <label for="otherpet">Other</label>
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>MESSAGE</legend>
+            <label for="message">Message me:</label>
+            <p>
+            <textarea name="message" id="message" placeholder="Send me your Message here!" rows="15" cols="75" ></textarea>
+            </p>
+        </fieldset>
+        <br>
+        <button type="submit" name="submit" id="submit">Submit</button>
+        <button type="reset" name="reset" id="reset">Reset</button>
+        </form>
+      </article>
+      <hr>
+    </main>
+
+    <footer>
+      <article>
+          <section id="author-information"></section>
+          <h4>INFORMATION</h4>
+          <address>
+            Author Name: <a href="about.html" target="_blank">Hadia Khokhar</a
+            ><br >
+            For Contact:
+            <ul>
+              <li>
+                <a rel="gmail" href="mail-to:workwithhadia@gmail.com">my-email</a
+                ><br >
+              </li>
+              <li><a href="tel:+921283939322">my-telephone-number</a></li>
+            </ul>
+            Address: Gulistan-e-johar, Karachi, Pakistan
+          </address>
+        </section>
+        <section>
+          <a href="#">Back to Top Page</a>
+          <hr>
+          <h4>For Downloading Resources:</h4>
+          <p>Click to Download the given resources</p>
+          <ul>
+            <li><a href="Assests/me.png" download>About-me-icon</a></li>
+            <li><a href="Assests/icon.png" download>Web-icon</a></li>
+            <li><a href="index.html" download>this-html-webpage-code</a></li>
+          </ul>
+
+          <!-- For Rights -->
+          &lt;&lt;&lt; All Rights Reserved to &copy;: Hadia Khokhar &gt;&gt;&gt;
+        </section>
+      </article>
+    </footer>
+  </body>
+</html>

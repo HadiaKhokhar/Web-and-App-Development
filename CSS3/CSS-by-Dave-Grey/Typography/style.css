@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+body{
+  padding: 10%;/* This is will  not be inherited by aevery element */
+  font-size: 2rem;/* This is will be inherited by aevery element */
+  color: cornflowerblue;
+}
+
+/* input,button{
+  font-size: inherit;
+} */
+main{
+  border: 8px solid rgb(99, 96, 96);
+  padding: 10px;
+  margin: 0px;
+}
+
+p{
+  font-size: 0.7em;
+  padding: inherit;
+  margin: inherit;
+  /* text-decoration:line-through; */
+  /* text-transform:uppercase ; */
+  text-transform:lowercase;
+  /* text-align: right; */
+  text-align: left;
+  /* text-align: justify; */
+  /* line-height: 2 ; */
+  line-height: 2;
+  word-spacing: 20px;  
+}
+p.abc{
+  letter-spacing: 35px;
+  /* font-weight: 900; */
+  /* font-style: italic;
+  font-style: oblique; */
+  font-style: normal;
+  /* font-family: sans-serif; */
+  /* font-family: monospace; */
+  /* font-family: fantasy; */
+  font-family: 'Courier New', Courier, monospace;
+}
+p.abc1{
+  font-size: 30px;
+  font-family:"Kode Mono", monospace; /* External Fonts */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  letter-spacing: 20px;
+}
+
+

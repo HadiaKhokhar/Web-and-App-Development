@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+body{
+  background-color:rgb(194, 248, 178);
+  font-family:"Kode Mono", monospace;
+  font-size: 1.5rem;
+  padding:10% 20%;
+  margin: 0px;
+}
+main{
+  border: 6px solid rgb(58, 55, 55);
+  outline: 6px solid rgb(109, 173, 89);
+  padding :10px 50px ;
+}
+ol{
+  /* list-style-type:lower-alpha;
+  list-style-type: decimal; Default
+  list-style-type:lower-roman; */
+  /* list-style-type: disc; */
+  list-style-type: lower-alpha;
+  /* list-style-type: none; */
+  /* padding:0px */
+}
+ul{
+  /* list-style-type: square;*/
+  list-style-type: disc; /*Default*/
+  /* list-style-type: circle; */
+  text-align: center;
+  list-style-position: inside;
+  /* list-style-position: Outside;  */ /* Default*/
+  color:rgb(39, 108, 165) ;
+  /* line-height:2; */
+  /* list-style-image:url("../Assests/checkmark.png"); */
+  list-style: square  inside url("../Assests/checkmark.png");
+}
+
+ul>li{
+  color: rgb(207, 70, 98);
+}
+ul>li:nth-child(even){
+  color: rgb(116, 50, 50);
+  font-style: italic;
+}
+ol>li:nth-child(2){
+  color:rgb(32, 175, 115)
+}
+ol>li::marker{
+  color:rgb(9, 9, 253);
+  content: "-";
+  color: rgb(56, 56, 56);
+  font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+body{
+  padding: 10%;
+  background-color: rgb(186, 214, 255);
+  font-family:"Kode Mono", monospace;
+  font-size: 1.rem ;
+}
+h1{
+  text-align: center;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+  /* cursor: cell; */
+  cursor: pointer ; /*default*/
+  /* For Before Visit */
+  color: white;
+  font-weight:500;
+}
+/* After Visited */
+a:visited{
+  color: rgb(139, 132, 240);
+}
+a:hover,a:focus{
+  color: rgb(4, 4, 167);
+  /* background-color: rgb(104, 97, 197); */
+  /* opacity: 0.7; */
+
+}
+a:active{
+  color: red;
+}

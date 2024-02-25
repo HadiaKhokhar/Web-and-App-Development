@@ -1,0 +1,31 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+  background-color: cadetblue;
+  min-height: 100vh;
+}
+
+
+
+h1{
+  border: 2px dashed rgb(99, 102, 110);
+  width: 50%;
+  font-size: 3rem;
+  padding: 0.3em;
+}
+main{
+  width: 50%;
+  background-color: brown;
+  font-size: 2rem;
+
+}
+
+p{
+  font-size: 2rem
+}

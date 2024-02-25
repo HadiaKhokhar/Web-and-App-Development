@@ -1,0 +1,55 @@
+/* Universal Selector */
+/* *{
+  background-color: rgb(46, 46, 46);
+} */
+
+/* Type Selector */
+body{
+  background-color: rgb(49, 49, 49);
+  padding: 50px;
+}
+article{
+  border: 1px solid whitesmoke;
+  padding: inherit;
+}
+h1{
+  text-align: center;
+  color: rgb(151, 42, 214);
+  font-size: 50px ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+h2,h3{
+  color: rgb(197, 105, 209);
+}
+p{
+  color: antiquewhite;
+}
+
+/* Child Selector */
+ul>li{
+  color: antiquewhite;
+}
+
+/* Descendent Selector */
+section a{
+  color: rgb(230, 104, 156);
+}
+
+/* ID Selector */
+#image{
+  display: flex;
+  justify-content: center;
+}
+
+/* Ajacent Sibling (it will affect the first h2 after h1  h2 should be the direct sibling of h1 )*/
+h1+p+p{
+  color: #000; 
+  text-align: center;
+}
+
+/* General Sibling Selector */
+/* h1~p{
+  color: #000; 
+  text-align:center ;
+} */

@@ -1,0 +1,67 @@
+*{
+  margin: 0px;
+  /* padding: 0px */
+}
+
+
+/* h1{
+  border: 3px dashed burlywood;
+  width: 80%;
+  font-size: 2rem;
+  padding: 0.5em;
+  margin: 0%;
+  
+} */
+
+
+body{
+  height: 100vh;
+  margin: 0px;
+  background-color: rgb(53, 52, 52);
+}
+.container{
+  border: 5px /*dashed*/ /*outset*/ double   rgb(179, 114, 179);
+  /* border-left: 5px solid rgb(10, 152, 247) ;
+  border-right: 5px solid rgb(10, 152, 247) ; */
+  font-size: 1.5rem;
+  padding: 1em ;
+  /* padding-left:2em;
+  padding-right: 4em ;
+  padding-top:2em;
+  padding-bottom: 2em; */
+  margin: 1.5em 1em;
+  /* margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em; */
+  color: whitesmoke;
+  outline: 2px solid palegreen ;
+  outline-offset: 10px /*-15px*/;
+}
+
+.circle{
+  margin:50px auto; /*Sets the object in center horizontally and top and bottom is set to given num*/
+  border: 5px dashed black;
+  outline: 3px solid rgb(255, 255, 255);
+  outline-offset: -15px;
+  border-radius: 100px;
+  background-color: gold;
+  width: 200px ;
+  height: 200px;
+
+}
+
+
+
+
+
+
+header{
+  /* border: 3px solid plum; */
+  /* width: 500px; */
+  /* padding: 10px; */
+  /* box-sizing:content-box; */
+  box-sizing:border-box;
+}
+
+

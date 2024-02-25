@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+</head>
+<body>
+  <form action="index.html" method="post">
+
+    <fieldset  id="user-details" >
+      <legend><b>Your Details;</b></legend>
+      <!-- Name -->
+      <label for="user-name">Name:</label>
+      <input type="text" name="user-name" id="user-name"  maxlength="20" required placeholder="Enter your name" ><br><br>
+      <!-- Email -->
+      <label for="user-email">Email:</label>
+      <input type="email" name="user-email" id="user-email"  maxlength="20" placeholder="Enter your email" required  >
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend><b>Your Reviews:</b></legend>  
+      <!--Question:1-->
+      <label for="review-q1">How did you hear about us?</label>
+      <select name="review-q1" id="review-q1" required>
+        <option value="none" selected>None</option>
+        <option value="google">Google</option>
+        <option value="facebook">Facebook</option>
+        <option value="instagram">Instagram</option>
+        <option value="locally">Locally</option>
+      </select>
+      <br>
+      <!--Question:2-->
+      <p>Would you visit again?</p>
+      <input type="radio" name="review-q2" value="yes" id="yes" required><label for="yes">Yes</label>
+      <input type="radio" name="review-q2" value="no" id="no" required><label for="no">No</label>
+      <input type="radio" name="review-q2" value="maybe" id="maybe" required><label for="maybe">Maybe</label>
+      <br>
+      <br>
+      <!--Comments -->
+      <label for="Comments">Comments:</label><br>
+      <textarea name="comments" id="comments" rows="9" cols="50" placeholder="Share your reviews with us!"></textarea>
+      <br>
+      <!-- Permission for emails -->
+      <label for="permission">
+        <input type="checkbox" name="permission" value="yes" id="permission"> Sign me up for Emails updates
+      </label>
+      <br>
+      <br>
+      <!-- submit -->
+      <input type="submit" name="submit">
+    </fieldset>
+
+  </form>
+</body>
+</html>

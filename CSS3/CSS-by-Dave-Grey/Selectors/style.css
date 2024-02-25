@@ -1,0 +1,35 @@
+/* element selecter is least specific  */
+body{
+    font-size: 22px;
+  background:rgb(44, 42, 42);
+  border: 3px solid white;
+  margin: 100px; 
+  padding: 20px
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: antiquewhite;
+}
+p span{
+  color: cadetblue;
+}
+
+h1,h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #b266c9;
+  text-align: center;
+}
+
+/* Class  selecter is more sepcific */
+.article-heading{
+  color: hsl(0, 0%, 6%);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Id selecter is even more specific */
+#second-p{
+  font-style: italic;
+  color: rgb(88, 83, 83);
+
+}

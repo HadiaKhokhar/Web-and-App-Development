@@ -1,0 +1,27 @@
+/* body{
+  background-color:rgb(200,200,200);
+  padding: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  
+}
+
+h1{
+  background-color: rgb(12, 111, 136);
+}
+h2{
+  background-color: rgb(241, 17, 148);
+}
+p{
+  background-color: rgb(241, 241, 237);
+  color: black;
+} */
+
+body{
+  background-color: palevioletred;
+}
+
+h1{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 100px;
+}

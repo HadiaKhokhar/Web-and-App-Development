@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+
+  <form action="index.php" method="post"> 
+    <fieldset>
+      <legend>Personal Details</legend>
+      <!-- For salutation -->
+      <p>
+        <label for="salutation">Salutation</label>
+        <select name="salutation" id="salutation">
+          <option value="none">None</option>
+        </select>
+      </p>
+    <!-- For Fisrt Name -->
+      <p>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname" maxlength="10" size="10" required>
+      </p>
+      <!-- For Last Name -->
+      <p>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" maxlength="10" size="10">
+      </p>    
+      <!-- For Gender -->
+      <p>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male" id="male" required><label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female" ><label for="female">Female</label>
+        <input type="radio" name="gender" value="other" id="other" ><label for="other">Other</label>
+      </p>
+      <!-- For email -->
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+      </p>   
+      <!-- For Date of Birth -->
+      <p>
+        <label for="birth-date">Date of Birth:</label>
+        <input type="date" name="birth-date" id="birth-date">
+      </p>
+      <!-- For Address -->
+      <p>
+        <label for="address">Address:</label><br>
+        <textarea name="address" id="address" cols="40" rows="10"></textarea>
+      </p>
+      <!-- For Submit button -->
+      <button type="submit" name="submit">Submit</button>
+  </fieldset>
+  </form>
+</body>
+</html>

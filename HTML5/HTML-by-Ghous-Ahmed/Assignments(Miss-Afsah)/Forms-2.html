@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <form action="https://formsubmit.co/workwithhadia@gmail.com" method="post"> 
+    <fieldset>
+      <legend style="text-align: center;"><h2>Sign Up</h2></legend>
+    <!-- For Name -->
+      <p>
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name" maxlength="20" size="20" required placeholder="Emily Rose"> 
+      </p>
+    <!-- For email -->
+      <p>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="emilyross@gmai.com" required>
+      </p>   
+    <!-- For Password -->
+      <p>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password" required placeholder="8 character" minlength="8" 
+        title="Enter a stong Password that should have atleast 8 characters">
+      </p>
+    <!-- For Confirm Password -->
+      <p>
+        <label for="confirm-password">Password:</label><br>
+        <input type="password" name="confirm-password" id="confirm-password" required placeholder="Enter Your Password again" minlength="8" >
+      </p>
+    <!-- For Date of Birth -->
+      <p>
+        <label for="birth-date">Date of Birth:</label><br>
+        <input type="date" name="birth-date" id="birth-date" required>
+      </p>
+      <!-- For Gender -->
+      <p>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" value="male" id="male" required><label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female" ><label for="female">Female</label>
+        <input type="radio" name="gender" value="other" id="other" ><label for="other">Other</label>
+      </p>
+      <!-- For Inserting photo -->
+      <p>
+        <label for="user-photo">Insert Your Photo:</label><br>
+        <input type="file" name="user-photo" id="user-photo" required>
+      </p>
+      <!-- For Inserting resume -->
+      <p>
+        <label for="resume">Insert Your Resume:</label><br>
+        <input type="file" name="resume" id="resume" required>
+      </p>
+      <!-- For Security Question -->
+      <p>
+        <label for="security-question">Security Question:</label><br>
+        <select name="security-question" id="security-question">
+          <option value="none">None</option>
+          <option value="pet-name">What's the name of your pet?</option>
+          <option value="favourite-fruit">What's your Favourite Fruit?</option>
+          <option value="chidhood-nickname">What is the Nickname of Your Chidhood?</option>
+        </select>
+      </p>
+      <!-- Text area for answer -->
+      <p>
+        <textarea name="answer" id="answer" cols="40" rows="6" placeholder="Enter the Answer of Question above here!"></textarea>
+      </p>
+      <!-- For Agreement -->
+      <p>
+        <input type="checkbox" name="agreement" id="agreement" required>
+        <label for="agreement">I agree with all Terms and Conditions</label>
+      </p>
+      <!-- For Submit button -->
+      <button type="submit" name="register" >Register</button>
+  </fieldset>
+  </form>
+</body>
+</html>

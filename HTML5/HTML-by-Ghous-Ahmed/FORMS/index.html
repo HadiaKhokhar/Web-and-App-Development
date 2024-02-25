@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+  <form action="http://www.example.com/subscribe.php" method="post" id="registration-form" >
+    <fieldset align="center">
+      <legend><h1>Registration Form</h1> </legend> 
+      <!-- Full Name -->
+      <p>
+        <b>Enter your Full Name:</b><br>
+        <input type="text" width="10" name="full-name" id="full-name" placeholder="Emily Rose" required="required" >
+      </p>
+      <!--Username  -->
+      <p>
+        <b>Enter your Username [without spaces]:<br></b>
+        <input type="text" width="10" name="username" id="username" maxlength="20" placeholder="@emilyrose" required="required">
+      </p>
+      <!-- Email -->
+      <label for="email"><b>Enter Your Email:</b></label><br>
+      <input type="email" name="email" id="email" placeholder="emilyrose@gmail.com">
+      <!--Password  -->
+      <p>
+        <b>Enter your Password: </b><br>
+        <input type="password" name="password" id="password" maxlength="20" size="15" required="required">
+      </p>
+      <!--Gender  -->
+      <p>
+        <b>Select Your Gender:</b>
+        <input type="radio" name="gender" value="male" required="required">Male
+        <input type="radio" name="gender" value="female" required="required">Female
+        <input type="radio" name="gender" value="other"  required="required">Other
+      </p>
+      <!-- Date of Birth -->
+      <label for="date-of-birth"><b>Enter Your Date of Birth: </b></label>
+      <input type="date" name="date-of-birth" id="date-of-birth" required>
+      <!-- Insert File -->
+      <p>
+        <label for="audio"><b>Insert your Favourite Song file:</b></label>
+        <input type="file" name="audio" id="audio">
+      </p>
+
+      <!-- For Search -->
+      <label for="search">Search</label>
+      <input type="search" name="search" id="search" >
+      <input type="submit" name="search" >
+    
+      
+      <!--Languaues questions  -->
+      <p>
+        <b>Tick the languages given the below that you have learned: </b>
+        <input type="checkbox" name="language" value="html">HTML
+        <input type="checkbox" name="language" value="css">CSS
+        <input type="checkbox" name="language" value="java-script">Java-Script
+      </p>
+      <!-- Url link to portfolio -->
+      <label for="user-portfolio-url"><b>Share the link of websites that contain your Projects:</b></label><br>
+      <input type="url" name="user-portfolio-url" id="user-portfolio-url" placeholder="Enter the website address">
+      <!--Devices and Country questions  -->
+      <p>
+        <b>What device is available at your home? </b>
+        <select name="device"  size="1" multiple="multiple" >
+          <option value="laptop" >Laptop</option>
+          <option value="mobile">Mobile</option>
+          <option value="desktop-computer">Desktop Computer</option>
+        </select><br><br>
+        <b>Which Country do you belong from: </b>
+        <select name="country" >
+          <option value="pakistan" selected="selected">Pakistan</option>
+          <option value="india">India</option>
+          <option value="bangladesh">Bangladesh</option>
+          <option value="afghanistan">Afghanistan</option>
+          <option value="iran">Iran</option>
+          <option value="saudia-arabia">Saudia Arabia</option>
+        </select>
+      </p>
+      <!-- Comments -->
+      <p>
+        <b>What do you think about this Form?</b></p> 
+        <textarea name="comments" id="comments" rows="6" cols="50"  placeholder="Share your thoughts with us!"></textarea>
+      </p>
+      <!-- Subscribe -->
+      <p>
+        <label for="subscribe">Click on the button If you want emails about updates and more!</label><br><br>
+        <input type="image" src="OIP.jpeg" width="70" name="subscribe" align="center">  
+      </p>
+      <!-- Conditions -->
+      <label for="agreement">
+        <input type="checkbox" name="agreement" required >I agree to all terms and Conditions
+      </label>
+      <br><br>
+      <!-- Submit Button -->
+      <button name="submit" id="submit">Submit</button>
+    </fieldset>
+  </form>
+</div>
+</body>
+</html>
