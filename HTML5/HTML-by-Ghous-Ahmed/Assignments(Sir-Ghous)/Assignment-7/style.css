@@ -54,7 +54,8 @@ main{
 /* Side News */
 .s-news{
   vertical-align: top;
-  height:max-content;
+  /* padding: 0px;
+  height:0px; */
 }
 .button{
   width: fit-content;
@@ -98,12 +99,11 @@ main{
 }
 /* Main News */
 .main-news{
-  vertical-align: top;
   padding: 0px 15px
 }
-.main-news>div{
+/* .main-news>div{
   margin-top:;
-}
+} */
 .main-news img{
   border-radius: 30px;
   padding-bottom: 0px;
