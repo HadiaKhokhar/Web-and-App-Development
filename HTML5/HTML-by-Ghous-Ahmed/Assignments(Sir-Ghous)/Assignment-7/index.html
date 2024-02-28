@@ -4,49 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Aaj English TV</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    ul>li{
-      display: inline-block;
-      padding: 0px 12px ;
-    }
-    li>h3>a{
-      text-decoration: none;
-      color: rgb(53, 52, 52);
-    }
-    li>h3>a:hover{
-      color: rgb(7, 88, 88);
-    }
+
   </style>
 </head>
 <body>
   <!-- header starts -->
   <header>
     <!-- header's head -->
-    <div align="center">
-      <table width="80%"  style="font-size: 20px; font-style: italic ; font-weight:lighter; color: rgb(7, 88, 88); " >
+    <div align="center" class="h-head">
+      <table>
         <tr align="center">
           <td>
-            <a href="example.html" target="_blank" style="color: orange; text-decoration:underline solid rgb(94, 94, 175);">
-              Watch Live
-            </a>
+            <a href="example.html" target="_blank">Watch Live</a>
           </td>
           <td rowspan="3">
             <figure>
               <img src="https://scontent.fkhi4-3.fna.fbcdn.net/v/t39.30808-1/279761421_5218478461522273_5185307772310411085_n.jpg?stp=dst-jpg_p160x160&_nc_cat=1&ccb=1-7&_nc_sid=596444&_nc_eui2=AeF_rpNea2QAElrc9xhWtjEVOiWskEjlXIU6JayQSOVchTb0S9z_1zE2SV0714g7n8GGzLlK3gza-2z6GPq429mB&_nc_ohc=J4DGnHTkNksAX8-LSxf&_nc_ht=scontent.fkhi4-3.fna&oh=00_AfDjvhmhACpcOGHWh8Ttvs2rUCCubxhNj15POKtL-FcTMw&oe=65E0D4FD" alt="Aj English News">
-              <figcaption style="font:initial; text-decoration:none ; color: black;">Monday, February 26, 2024|15 Shaban 1445</figcaption>
+              <figcaption>Monday, February 26, 2024|15 Shaban 1445</figcaption>
             </figure>
           </td>
           <td>
-            <a href="example.html" target="_blank" style="color: orange; text-decoration:underline solid rgb(94, 94, 175);">اردو</a>
+            <a href="example.html" target="_blank">اردو</a>
           </td>
         </tr>
         <tr align="center">
-          <td style="text-decoration:underline solid rgb(94, 94, 175);">
-            Election 2024
-          </td>
-          <td style="text-decoration:underline solid rgb(94, 94, 175);">
-            Petrol Prices
-          </td>
+          <td>Election 2024</td>
+          <td>Petrol Prices</td>
         </tr>
         <tr align="center">
           <td>Pakistan Iran Tensions</td>
@@ -54,46 +39,165 @@
         </tr>
       </table>
     </div>
-    <hr style="border: 2px solid ;"/>
+    <hr class="h-line">
     <!-- Header's Navigation Bar -->
-    <div align="center">
-      <ul style="list-style: none; text-transform: uppercase; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; font-size: 20px; display:inline-block; width: 70%; text-align:center;margin: 0px; padding: 0px;">
+    <div align="center" class="h-nav">
+      <ul>
         <li><h3><a href="example.html" target="_blank">Latest</a></h3></li>
-        <li ><h3><a href="example.html" target="_blank">Pakistan</a></h3></li>
+        <li><h3><a href="example.html" target="_blank">Pakistan</a></h3></li>
         <li><h3><a href="example.html" target="_blank">World</a></h3></li>
         <li><h3><a href="example.html" target="_blank">Business & Economy</a></h3></li>
         <li><h3><a href="example.html" target="_blank">Sports</a></h3></li>
         <li><h3><a href="example.html" target="_blank">Life & Style</a></h3></li>
       </ul>
     </div>
-    <hr style="border: 2px solid ;">
+    <hr class="h-line">
   </header>
   <!-- Header Ends -->
   <!-- Main Body Starts -->
-  <main style="padding:8% 5%;">
+  <main>
     <div>
       <table>
         <tr>
-          <td width="40%">
-            <div style="width:fit-content ; background-color: black; border-radius: 10px; color: rgb(248, 248, 248);font: 20px Arial; padding:8px 15px; ">TOP STORIES</div>
-            <div style="margin-top: 30px;">
-              <div style="font: small 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; color:#2e2d2d ; font-weight: 700; ">
-                PAKISTAN | <span style="text-transform: uppercase; color:rgb(26, 141, 141) ;">an hour ago</span>
+          <td width= "20%"class="s-news" >
+            <div class="button">TOP STORIES</div>
+            <div class="side-news">
+              <div class="text-loc-time">
+                PAKISTAN | <span class="text-time">an hour ago</span>
               </div>
               <div>
-                <h1>Lahore Women Lahore woman rescued after mob surrounds her for wearing ‘dress with Arabic on it’</h1>
+                <h2 class="side-new-heading">Court indicts Imran Khan, Bushra Bibi in £190m reference</h2>
+                <div  class= "side-new-content">
+                  <img  src="Assets/imran-and-his-wife.webp" alt="Former PM Imran Khan (R) along with his wife Bushra Bibi (L) looks on as he signs surety bonds for bail in various cases, at a registrar office in the High court, in Lahore on July 17, 2023. AFP"
+                  class="side-news-imag" align="right">
+                  <p>Judge Rana heard the case inside Adiala jail</p>
+                </div>
+              </div>
+            </div>
+            <hr class="line">
+          </td>
+          <td rowspan="2" width="40%" class="main-news">
+            <div>
+              <img src="https://i.aaj.tv/primary/2024/02/25184846dfe26bd.webp" alt="" width="100%" >
+              <h2>Govt once again asks Alvi to summon NA session as stalemate continues</h2>
+            </div>
+            </td>
+          <td width="20%" rowspan="5">
+            <div class="popu-news">
+              <h2>Popular</h2>
+              <div>
+                  <table>
+                    <tr>
+                      <td class="bullet"><div class="point">1</div></td>
+                      <td class="bullet-news">
+                        Lahore woman rescued after mob surrounds her for wearing ‘dress with Arabic on it
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                      <td class="bullet"><div class="point">2</div></td>
+                      <td class="bullet-news">
+                        Maryam Nawaz sworn in as Punjab’s first woman chief minister
+                    </tr>
+                    <tr>
+                      <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                      <td class="bullet"><div class="point">3</div></td>
+                      <td class="bullet-news">
+                        Profile: Anthony Naveed, the third minority deputy speaker in Pakistan’s history
+                    </tr>
+                    <tr>
+                      <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                      <td class="bullet"><div class="point">4</div></td>
+                      <td class="bullet-news">
+                        President Alvi delays signing summary to summon NA session
+                    </tr>
+                    <tr>
+                      <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                      <td class="bullet"><div class="point">5</div></td>
+                      <td class="bullet-news">
+                        Sindh Assembly: PPP’s Owais Qadir Shah speaker, Anthony Naveed becomes deputy speaker
+                        
+                    </tr>
+                    <tr>
+                      <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                      <td class="bullet"><div class="point">6</div></td>
+                      <td class="bullet-news">
+                        Saudia Arabia introduces new rules for hiring foreign domestic workers
+                        
+                    </tr>
+                    <tr>
+                      <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                      <td class="bullet"><div class="point">7</div></td>
+                      <td class="bullet-news">
+                        Fire in UAE factory injures 9 Pakistanis
+                        
+                    </tr>
+                    <tr>
+                      <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                      <td class="bullet"><div class="point">8</div></td>
+                      <td class="bullet-news">
+                        Saudi Arabia imposes SAR 50,000 fine for Hajj without permit
+                    </tr>
+                    <tr>
+                      <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                      <td class="bullet"><div class="point">9</div></td>
+                      <td class="bullet-news">
+                        US Air Force serviceman sets himself on fire in protest against Gaza war
+                    </tr>
+                    <tr>
+                      <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                      <td class="bullet"><div class="point">10</div></td>
+                      <td class="bullet-news">
+                        PTI replaces Mian Aslam Iqbal by Rana Aftab Khan as Punjab CM candidate
+                        
+                    </tr>
+                    <tr>
+                      <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                      <td class="bullet"><div class="point">11</div></td>
+                      <td class="bullet-news">
+                        Rupee gains ground against dollar in interbank
+                    </tr>
+                  </table>
+              </div>
+            </div>  
+          </td>
+        </tr>
+        <tr class="s-news">
+          <td width= "20%" >
+            <div class="side-news">
+              <div class="text-loc-time">
+                PAKISTAN | <span class="text-time">an hour ago</span>
+              </div>
+              <div>
+                <h2 class="side-new-heading">Court indicts Imran Khan, Bushra Bibi in £190m reference</h2>
+                <div  class= "side-new-content">
+                  <img  src="Assets/imran-and-his-wife.webp" alt="Former PM Imran Khan (R) along with his wife Bushra Bibi (L) looks on as he signs surety bonds for bail in various cases, at a registrar office in the High court, in Lahore on July 17, 2023. AFP"
+                  class="side-news-imag" align="right">
+                  <p>Judge Rana heard the case inside Adiala jail</p>
+                </div>
               </div>
             </div>
           </td>
-          <td rowspan="2" width="30%">
-            <img src="https://i.aaj.tv/primary/2024/02/25184846dfe26bd.webp" alt="" width="inherit">
-          </td>
-          <td width="20%">
-            <div width="inherit" height="" style="background-color: aqua;">wdwd
-          </div></td>
-        </tr>
-        <tr>
-
         </tr>
       </table>
     </div>

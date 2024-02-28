@@ -1,0 +1,167 @@
+/* Header Head Style */
+.h-head>table{
+  width:80%;
+  font-size: 20px; 
+  font-style: italic;
+  font-weight:lighter;
+  color: rgb(7, 88, 88);
+} 
+.h-head a:link,
+.h-head a:visited{
+  color:orange;
+}
+.h-head a{
+  text-decoration: underline solid  rgb(7, 88, 88);
+} 
+.h-head figcaption{
+  font:initial;
+  text-decoration:none;
+  color: black;
+}
+.h-line{
+  border: 2px solid;
+  margin: 0px;
+}
+
+/* Header Nav Style */
+.h-nav ul{
+  list-style: none; 
+  text-transform: uppercase; 
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
+  font-size: 18px; 
+  width: 70%; 
+  text-align:center;
+  margin: 0px; 
+  padding: 0px;
+}
+.h-nav li{
+  display: inline-block;
+  padding: 0px 10px ;
+  margin:0px;
+  
+}
+.h-nav a{
+  color: rgb(53, 52, 52);
+  text-decoration:none;
+}
+.h-nav a:hover{
+  color: rgb(7, 88, 88);
+}
+/* Main */
+main{
+  padding:5% 10%;
+}
+/* Side News */
+.s-news{
+  vertical-align: top;
+  height:max-content;
+}
+.button{
+  width: fit-content;
+  background-color: rgb(36, 35, 35);
+  border-radius: 10px; 
+  color: rgb(248, 248, 248);
+  font: 20px Arial; 
+  padding:8px 15px;
+}
+.side-news{
+  margin-top: 30px;
+}
+.text-loc-time{
+  font: small 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; color:#2e2d2d ; font-weight: 700; 
+}
+.text-time{
+  text-transform: uppercase; 
+  color:rgb(26, 141, 141) ;
+}
+.side-new-heading{
+  font: 25px , Georgia, 'Times New Roman', Times, serif;
+  padding-right: 30px;
+  margin-bottom: 2px;
+}
+.side-news-imag{
+  width:60% ;
+  display: inline;
+  padding-left: 10px;
+}
+.side-new-content>p{
+  font-size:18px;
+  color: #4d4c4c;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  display: inline;
+  margin: 0px;
+  padding:0px;
+}
+.line{
+  background-color:rgb(0, 0, 0);
+  margin-top: 20%;
+}
+/* Main News */
+.main-news{
+  vertical-align: top;
+  padding: 0px 15px
+}
+.main-news>div{
+  margin-top:;
+}
+.main-news img{
+  border-radius: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
+}
+.main-news h2{
+  font-size: 30px;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+  word-spacing: 2px;
+  /* letter-spacing:1px; */
+  margin-top: 0px;
+  padding: 8px  10px;
+  background-color: rgb(231, 230, 230);
+  text-align: center;
+}
+/* Popular News */
+
+.popu-news{
+  border:2px solid orange;
+  border-radius: 5px;
+  padding: 0px;
+  width:100%;
+}
+.popu-news>h2{
+  text-align: left;
+  font: 27px  Arial, Helvetica, sans-serif;
+  font-weight:700;
+  background-color: #bcdde7;
+  margin: 0px;
+  padding: 10px;
+}
+.popu-news>div{
+  margin: 0px;
+  padding:20px;
+}
+.point{
+  /* display: inline-block; */
+  background-color:orange;
+  width:20px;
+  height: 20px;
+  border-radius: 80%;
+  color: rgb(244, 247, 247);
+  text-align: center;
+  padding: 1.5px;
+  /* margin:0px 0px 0px ; */
+  /* float:left; */
+  
+} 
+.bullet{
+  width:10%;
+  vertical-align: top;
+}
+.bullet-news{
+  width: 90%;
+  padding: 0px 0px 0px 10px  ;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
