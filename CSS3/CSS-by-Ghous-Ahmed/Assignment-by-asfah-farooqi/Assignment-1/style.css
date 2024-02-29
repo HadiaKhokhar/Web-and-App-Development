@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
 body{
-  background-color:rgb(40, 41, 40);
+  background-color:rgb(54, 52, 52);
   padding: 20px;
   margin: 0px;
 }
@@ -12,8 +12,9 @@ body{
 .heading{
   text-align: center;
   font-size:60px;
-  color: rgb(80, 167, 109);
+  color: rgb(54, 160, 90);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
 }
 /* For Main */
 .article-body{
@@ -24,10 +25,13 @@ body{
   box-sizing: border-box;
   padding: 2%;
   background-color:  rgba(22, 22, 22, 0.6);
+  border: 2px solid  rgb(54, 160, 90) ;
+}
+.article-body:hover{
+  width: 75%;
 }
 .article-body img{
   width: 300px;
-  ;
 
 } 
 .article-body p{
@@ -37,8 +41,9 @@ body{
   font-family:  "Roboto", sans-serif;
   color: rgb(231, 229, 229);
 }
-.p-button{
+
+/* .p-button{
   width: 25px;
   height: 25px;
   color: black;
-}
+} */
