@@ -44,7 +44,7 @@ section a{
 
 /* Ajacent Sibling (it will affect the first h2 after h1  h2 should be the direct sibling of h1 )*/
 h1+p+p{
-  color: #000; 
+  color: #4bcbd467; 
   text-align: center;
 }
 

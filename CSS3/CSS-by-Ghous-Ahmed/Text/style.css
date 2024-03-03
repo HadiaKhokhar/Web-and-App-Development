@@ -1,0 +1,101 @@
+@font-face {
+  font-family:"Sorce Code Pro" ;
+  src: url(Assests/Source-Code-Pro/SourceCodePro-Light.ttf);
+}
+@font-face {
+  font-family: "Woobly";
+  src: url(Assests/SuperWoobly-8MJlz.ttf);
+}
+/* *{
+  padding: 0px;
+  margin: 0px;
+} */
+/* p{
+  font-size: 28px;
+} */
+/* .one{
+  font-family: serif;
+
+}
+.two{
+  font-family: sans-serif;
+}
+.three{
+  font-family: monospace;
+} */
+/* .block{
+  width:fit-content;
+  height:fit-content;
+  font-size: 3rem;
+  padding:0.2em;
+  background-color:rgb(43, 41, 41) ;
+  color: rgb(47, 150, 47);
+  font-family:"Sorce Code Pro" ;
+  text-transform: uppercase;
+  margin:0.2em;
+  letter-spacing:-1px ;
+  word-spacing:-3px ;
+}
+.block p{
+  margin:0px;
+}
+div.block+div.block p{
+  font-family:"Woobly";
+  letter-spacing:3px;
+}
+.box{
+  background-color:rgb(34, 40, 49) ;
+  color: rgb(123, 199, 77);
+  width:50%;
+  font-size: 2rem;
+  text-align: justify;
+} */
+/* .shadow{
+  font-size: 4rem;
+  color: rgb(35, 36, 35);
+  text-shadow: 2px 3px 2px rgb(94, 146, 94) ;
+} */
+/* .s{
+  color: rgb(2, 103, 255) ;
+}
+.s:first-letter{
+  font-size: 2rem ;
+  color:rgb(51, 50, 50);
+}
+.s+p{
+  width: 50%;
+  background-color: cadetblue;
+  color: white;
+
+}
+.s+p::first-line{
+  font-size: 1.5rem;
+  color: black;
+} */
+/* a{
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color:rgb(170, 73, 90);
+  text-decoration: none;
+  
+}
+a:visited{
+  color: grey;
+}
+a:hover{
+  font-size:2.5rem;
+
+}
+a:active{
+  color: rgb(150, 9, 9);
+} */
+input{
+  width: 20%;
+  height:25px;
+  border-radius:5px;
+  border: 3px solid rgb(105, 104, 104);
+}
+input:focus{
+  background-color: grey;
+}
