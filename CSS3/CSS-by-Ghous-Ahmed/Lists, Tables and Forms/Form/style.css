@@ -1,0 +1,208 @@
+/* Fonts */
+@font-face {
+  font-family:"SF Pro Regular" ;
+  src: url(Assests/Fonts/SF-Pro/SFPRODISPLAYREGULAR.OTF);
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(Assests/Fonts/Roboto/Roboto-Regular.ttf);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  margin: 0px;
+  background-color: rgb(12, 20,23);
+}
+.container{
+  width: 75%;
+  height: 750px;
+  margin: 1.5% auto 1% auto;
+  border-radius:32px;
+  background-color:#FFFFFF;
+  padding:20px;
+  text-align: center;
+}
+/* Form image Box */
+.form-image{
+  display: inline-block;
+  width:48%;
+  height: 100%;
+  border-radius: 20px;
+  padding-left: 20px;
+  background-image: url(Assests/Images/flower.jpg);
+  background-size:contain  ;
+  background-repeat: none;
+}
+/* Form box */
+.form-box{
+  display: inline-block;
+  width: 48%;
+  height: 100%;
+  margin-right: 20px;
+  vertical-align: top;
+}
+/* Form Body */
+.form-box div.form-body{
+  width:55%;
+  height: 90%;
+  margin:12% auto 0px auto ;
+  text-align: left;
+  /* background-color: blueviolet; */
+}
+/* Form Intro Text */
+div.form-body .intro{
+  width: 100%;
+  height:15% ;
+  font:0.9rem  "SF Pro Regular";
+  margin-bottom:30px;
+}
+div.form-body .intro p{
+  margin-top: 15px;
+  text-align: justify;
+  font-size: 1rem;
+  color: rgb(49, 57, 87);
+  line-height: 21px;
+}
+/* Form */
+div.form-body .form{
+  width: 100%;
+  height:35% ;
+  margin-bottom:30px;
+  /* background-color: rgb(66, 90, 90); */
+  font: 0.8rem "Roboto Regular";
+}
+.form form{
+  width: 100%;
+  height: 100%;
+  color:#0C1421;
+}
+/* Email, Password, Form-button Box */
+form .email,form .password,form .form-button{
+  width: 100%;
+  height: 29%;
+  padding-top: 5px;
+}
+/* Forget Password Box */
+.form .f-pass{
+  height:13%;
+  padding-top:10px;
+  text-align: right;
+}
+.f-pass a , div.form-body>div:nth-child(3) a{
+  text-decoration: none;
+  color: rgb(30, 74, 233);
+}
+.f-pass a:hover,div.form-body>div:nth-child(3) a:hover{
+  color:  rgba(30, 74, 233,0.7);
+}
+/* Form Label */
+div.form-body .form label{
+  margin-top: 5px;
+}
+/* Form Input */
+div.form-body .form input,div.form-body button{
+  display: block;
+  width: 100%;
+  height:65%;
+  margin-top: 5px;
+  padding:9px;
+  background-color: #F7FBFF;
+  border: 1px solid #D4D7E3;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  color: #8897AD;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position:96%;
+}
+form div.email input{
+  background-image: url(Assests/Icons/envelope-solid.svg);
+  
+}
+form div.password input{
+  background-image: url(Assests/Icons/eye-slash-solid.svg);
+}
+form div.password input:active{
+  background-image: url(Assests/Icons/eye-solid.svg);
+}
+
+
+div.form-body form button{
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #162D3A;
+}
+
+/* Form Social Links */
+div.form-body .social-sign-in{
+  width: 100%;
+  height:28% ;
+  margin-bottom:30px;
+  font-family: "Roboto Regular";
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Or text */
+.social-sign-in .social-sign-in-text{
+  width:100%;
+  height: 19%;
+}
+.social-sign-in .social-sign-in-text hr{
+  display: inline-block;
+  width: 45%;
+  border: 1px solid rgba(128, 128, 128,0.3);
+}
+.social-sign-in .social-sign-in-text p{
+  display: inline-block;
+  padding:0px 5px;
+}
+/* Social Sign in Buttons */
+.social-sign-in  .social-sign-in-buttons{
+  width: 100%;
+  height:56%;
+}
+.social-sign-in>.social-sign-in-buttons>button{
+  height: 37%;
+  margin-top: 0px;
+  text-align: left;
+  font-size:0.8rem;
+  color:#0C1421;
+  background-position:22%;
+  background-size: 22px;
+}
+.form-body .social-sign-in-buttons button p{
+  position: relative;
+  left: 30%;
+  color: #313957;
+}
+.social-sign-in-buttons>button:nth-child(1){
+  background-image: url(Assests/Icons/google.png);
+  margin-bottom: 13px;
+}
+.social-sign-in-buttons>button:nth-child(2){
+  background-image: url(Assests/Icons/facebook.png);
+  margin-bottom: 13px;
+}
+/* Social Sign Bottom Text */
+.social-sign-in>div:nth-child(3){
+  height:25%;
+  padding-top:28px;
+  font-size:0.9rem;
+}
+div.form-body .copy-right-text{
+  width: 100%;
+  height:7.9% ;
+  text-align: center;
+  font: 0.7rem "Roboto Regular";
+  color: #959cb6;
+  padding-top: 35px;
+
+}
+
+
