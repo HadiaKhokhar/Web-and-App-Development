@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(228, 217, 188);
+  display: flex;
+  /* flex-direction:column-reverse; */
+  /* flex-direction: row-reverse; */
+  /* flex-wrap: wrap-reverse    */
+  /* flex-wrap: wrap; */
+  /* The Shorthand */
+  flex-flow: column wrap ;
+  /* justify-content:space-around; */
+  /* justify-content: space-evenly; */
+  /* align-items:flex-end; */
+  /* align-items: center; */
+  justify-content: end;
+  gap: 20px 10px;
+  /* justify-content:space-between; */
+  /* row-gap: 2px; */
+  /* justify-content:flex-end  ; */
+  /* Align Content take place on multiple lines items */
+  /* align-content:space-between; */
+  /* align-content: flex-end; */
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+}
+.one{
+  background-color: rgb(236, 176, 149);
+}
+.two{
+  background-color: rgb(216, 149, 118);
+}
+.three{
+  background-color: rgb(204, 130, 96);
+  order: 5;
+}
+.four{
+  background-color: rgb(192, 104, 63);
+}
+.five{
+  background-color: rgb(173, 92, 54);
+}
+.six{
+  background-color: rgb(161, 76, 37);
+  /* Items with lower order values will appear before items with higher order values, and items with the same order value will appear in their original source order. */
+  order: -1;
+}
+body>div:nth-child(2){
+  height: calc(2 * 100vh);
+  border:2px solid greenyellow;
+  display: flex;
+  flex-flow:row wrap;
+  gap: 0;
+  align-items:center;
+  justify-content:space-around;
+}
+.red{
+  width: 300px;
+  height:300px;
+  /* flex-grow: 1;
+  flex-shrink: 1; */
+  background-color: rgb(114, 43, 43);
+
+}
+.blue{
+  width: 300px;
+  height:300px;
+  /* flex-grow: 1; */
+  flex-shrink: 1;
+  background-color: rgb(44, 24, 99);
+}
+.green{
+  width: 300px;
+  height:300px;
+  /* flex-grow: 1; */
+  flex-shrink: 5;
+  background-color: rgb(31, 131, 69);
+}
