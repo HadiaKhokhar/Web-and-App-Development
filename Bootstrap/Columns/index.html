@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+    [class^="col"] 
+      {
+      padding: 1rem;
+      background-color:rgb(83, 86, 88);
+      border: 1.5px solid #494a4b;
+      color: #b5bac4;
+    }
+    [class*="container"]
+        {
+            background-color:#7e8083;
+            ;
+        }
+    </style>
+</head>
+<body>
+    <!-- VERTICAL ALIGNMENT -->
+
+
+    <!-- for aligning the items of the div with row class vertically   -->
+    <div class="fluid-container">
+        <div class="container-md">
+            <div class="row align-items-center" style="height: 300px" >
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+    <!-- for aligning the items individualy  -->
+     <div class="container-fluid my-5">
+        <div class="container-lg">
+            <div class="row" style="height: 180px" >
+                <div class="col align-self-end">
+                  One of three columns
+                </div>
+                <div class="col align-self-center">
+                  One of three columns
+                </div>
+                <div class="col align-self-start">
+                  One of three columns
+                </div>
+            </div>
+        </div>
+     </div>
+    
+    <!-- HORIZONTAL ALIGNMENT -->
+     <div class="container my-5">
+        <div class="row row-cols-2 justify-content-center ">
+            <div class="col-5 my-2"></div>
+            <div class="col-5  my-2"></div>
+            <div class="col-5  my-2"></div>
+            <div class="col-5  my-2"></div>
+            <div class="col-5  my-2"></div>
+    
+        </div>
+     </div>
+     <div class="container my-5">
+        <div class="row row-cols-2 justify-content-end ">
+            <div class="col-5 my-2"></div>
+            <div class="col-5  my-2"></div>
+            <div class="col-5  my-2"></div>
+            <div class="col-5  my-2"></div>
+            <div class="col-5  my-2"></div>
+
+        </div>
+     </div>
+     <div class="container my-5">
+        <div class="row row-cols-2 justify-content-start ">
+            <div class="col-5 my-2"></div>
+            <div class="col-5  my-2"></div>
+            <div class="col-5  my-2"></div>
+            <div class="col-5  my-2"></div>
+            <div class="col-5  my-2"></div>
+        </div>
+     </div>
+     
+     <div class="container my-5">
+        <div class="row row-cols-2 justify-content-around ">
+            <div class="col-5 my-2"></div>
+            <div class="col-5  my-2"></div>
+            <div class="col-5  my-2"></div>
+            <div class="col-5  my-2"></div>
+            <div class="col-5  my-2"></div>
+        </div>
+     </div>
+     
+     <!-- When the units is greate than the 12 unit -->
+     <div class="container">
+        <div class="row">
+             <div class="col-3"></div>
+             <div class="col-5"></div>
+             <div class="col-5"></div>
+             <div class="col-5"></div>
+        </div>
+    </div>
+
+    <!-- how to move col into next line  -->
+    <div class="container text-center my-5">
+        <div class="row">
+          <div class="col-6 ">.col-6 .</div>
+          <div class="col-6 ">.col-6 .</div>
+           <!-- Force next columns to break to new line -->
+          <div class="w-100"></div>
+          <div class="col-6 ">.col-6 .</div>
+          <div class="col-6 ">.col-6 .</div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+          <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+      
+          <!-- Force next columns to break to new line -->
+          <div class="w-100"></div>
+      
+          <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+          <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+        </div>
+      </div>
+        <!-- Force next columns to break to new line at md breakpoint and up -->
+        <!-- <div class="w-100 d-none d-md-block"></div> -->
+
+
+    <!-- REORDERING -->
+
+    <!-- order -->
+     <!-- when given order The lower the number in the order-* class, the earlier the column will appear visually. after the no order col   -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-2">Column 1</div>
+            <div class="col-5 order-2">Column 3</div>
+            <div class="col-6 order-1">Column 2</div>
+            <div class="col-3 order-3">Colunmn 4</div>
+        </div>
+    </div>
+      
+    <!-- Offsetting Columns -->
+     <!-- In Bootstrap, you can offset grid columns to create more complex and flexible layouts. Offsetting moves columns to the right by adding empty space to the left of the column. This can be useful for centering columns, creating gaps between columns, or positioning content more precisely. There are two main methods to achieve this: using offset classes and using margin utilities. -->
+
+    <!-- Offset Class -->
+     <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4 offset-md-2">.col-md-4 .offset-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+          <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+        </div>
+      </div>
+    
+    <!-- Margin Utilities -->
+    <!-- margin utilities are used to adjust the spacing and positioning of elements. 
+     With the move to Flexbox in Bootstrap 4, margin utilities like .me-auto (margin-end auto) 
+     and .ms-auto (margin-start auto) can be used to push columns apart, center elements, or 
+     adjust spacing dynamically. Here’s an explanation of how these utilities work in the 
+     provided example: -->
+
+    <!-- Margin Utilities in Bootstrap:
+    .ms-auto: Adds margin-left: auto, pushing the element to the right within its flex container.
+    .me-auto: Adds margin-right: auto, pushing the element to the left within its flex container. -->
+      <div class="container my-5">
+        <div class="row">
+            <div class="col-2 me-auto">Column</div>
+            <div class="col-2 me-auto ">Column</div>
+            <div class="col-2 ">Column</div>
+        </div>
+      </div>
+
+    <!-- STANDALONE COLUM CLASES-->
+     <div class="col-3 col-md-6 col-lg-9 my-5">
+        
+     </div>
+     <div class="col-10 my-5">
+
+     </div>
+     <div class="col-4 my-5">
+
+     </div>
+
+
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
