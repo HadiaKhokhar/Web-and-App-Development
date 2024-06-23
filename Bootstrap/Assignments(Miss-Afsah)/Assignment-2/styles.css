@@ -1,0 +1,12 @@
+.navbar{
+    background-color: #F6F2FF;
+}
+
+.nav-item>a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 1.2rem; 
+     color:rgb(14, 14, 14) !important;
+}
+.nav-item>a:hover{ 
+     color:rgba(14, 14, 14,0.8) !important;
+}
