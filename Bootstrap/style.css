@@ -1,0 +1,13 @@
+
+[class^="col"] 
+{
+padding: 1rem;
+background-color:rgb(83, 86, 88);
+border: 1.5px solid #494a4b;
+color: #b5bac4;
+}
+[class*="container"]
+  {
+      background-color:#7e8083;
+      ;
+  }
