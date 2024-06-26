@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- PADDING -->
+    <div class="container-fluid">
+        <div class="container-md">
+            <div class="row">
+                <!-- Padding -->
+                <div class="col p-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vel, corporis blanditiis error sequi rerum vero nihil quisquam voluptatibus enim quaerat suscipit quas eaque perspiciatis. Amet aliquam sit maxime asperiores.
+                Quaerat, culpa. Laudantium adipisci eos voluptates debitis, ab aperiam sed! Laborum, temporibus perspiciatis reiciendis voluptatem tempore maiores cupiditate molestias maxime voluptas repudiandae! Mollitia cupiditate ratione totam aliquam praesentium sequi vel.
+                </div>
+                <!-- PADDING IN FOUR DIRECTION pe-2 (For right) ps-2(for start) ,pt-2 , pb-2 -->
+                <div class="col ps-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vel, corporis blanditiis error sequi rerum vero nihil quisquam voluptatibus enim quaerat suscipit quas eaque perspiciatis. Amet aliquam sit maxime asperiores.
+                </div>
+                <!-- ON DIFERENT BREAKPOINT -->
+                <div class="col-5 p-5 p-md-2"> 
+                    <div class="row">
+                        <div class="col">
+                            Quaerat, culpa. Laudantium adipisci eos voluptates debitis, ab aperiam sed! Laborum, temporibus perspiciatis
+                        </div>
+                        <div class="col">
+                            Quaerat, culpa. Laudantium adipisci eos voluptates debitis, ab aperiam sed! Laborum, temporibus perspiciatis
+                        </div>
+                        <div class="col">
+                            Quaerat, culpa. Laudantium adipisci eos voluptates debitis, ab aperiam sed! Laborum, temporibus perspiciatis
+                        </div>
+                    </div>    
+                </div>         
+            </div>
+                
+        </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
