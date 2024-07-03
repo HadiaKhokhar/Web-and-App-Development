@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear Fix</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+      .navbar{
+        background-color: #595f5f;
+        
+      }
+    .navbar a{
+        color: #f0f8ff;
+    }
+    .container-fluid>.container{
+        background-color:#7e8083;
+    }
+    div.container-fluid:nth-child(2){
+        background-color:#aaaaaa;
+    }
+    .col{
+    padding: 1.5rem;
+    background-color:rgb(83, 86, 88);
+    border: 1.5px solid #494a4b;
+    color: #b5bac4;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-fluid pt-4 pb-3"   >
+        <div class="container">
+            <div class="row row-cols-1 gy-5">
+                <div class="col">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eveniet eaque aperiam enim totam. Eum, corporis. Maiores, inventore. Eos doloribus hic unde eum quasi itaque velit veniam aut facilis asperiores!
+                Deserunt minima unde, provident sunt aspernatur corrupti delectus mollitia porro totam eum assumenda natus quia veritatis et maiores nisi minus dignissimos nostrum tempora, voluptas rem fuga dolorum incidunt. Dolorem, voluptas?
+                Autem, id ex est minima quam perspiciatis optio ab labore vitae eligendi sapiente animi officia tenetur qui iusto repellat ratione suscipit ad ducimus minus, enim corporis in facere? Eum, temporibus.</div>
+                <div class="col overflow-scroll " style="height: 50px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eveniet eaque aperiam enim totam. Eum, corporis. Maiores, inventore. Eos doloribus hic unde eum quasi itaque velit veniam aut facilis asperiores!
+                Deserunt minima unde, provident sunt aspernatur corrupti delectus mollitia porro totam eum assumenda natus quia veritatis et maiores nisi minus dignissimos nostrum tempora, voluptas rem fuga dolorum incidunt. Dolorem, voluptas?
+                Autem, id ex est minima quam perspiciatis optio ab labore vitae eligendi sapiente animi officia tenetur qui iusto repellat ratione suscipit ad ducimus minus, enim corporis in facere? Eum, temporibus.</div>
+                <div class="col">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eveniet eaque aperiam enim totam. Eum, corporis. Maiores, inventore. Eos doloribus hic unde eum quasi itaque velit veniam aut facilis asperiores!
+                Deserunt minima unde, provident sunt aspernatur corrupti delectus mollitia porro totam eum assumenda natus quia veritatis et maiores nisi minus dignissimos nostrum tempora, voluptas rem fuga dolorum incidunt. Dolorem, voluptas?
+                Autem, id ex est minima quam perspiciatis optio ab labore vitae eligendi sapiente animi officia tenetur qui iusto repellat ratione suscipit ad ducimus minus, enim corporis in facere? Eum, temporibus.</div>
+                <div class="col">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eveniet eaque aperiam enim totam. Eum, corporis. Maiores, inventore. Eos doloribus hic unde eum quasi itaque velit veniam aut facilis asperiores!
+                Deserunt minima unde, provident sunt aspernatur corrupti delectus mollitia porro totam eum assumenda natus quia veritatis et maiores nisi minus dignissimos nostrum tempora, voluptas rem fuga dolorum incidunt. Dolorem, voluptas?
+                Autem, id ex est minima quam perspiciatis optio ab labore vitae eligendi sapiente animi officia tenetur qui iusto repellat ratione suscipit ad ducimus minus, enim corporis in facere? Eum, temporibus.</div>
+                <div class="col">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eveniet eaque aperiam enim totam. Eum, corporis. Maiores, inventore. Eos doloribus hic unde eum quasi itaque velit veniam aut facilis asperiores!
+                Deserunt minima unde, provident sunt aspernatur corrupti delectus mollitia porro totam eum assumenda natus quia veritatis et maiores nisi minus dignissimos nostrum tempora, voluptas rem fuga dolorum incidunt. Dolorem, voluptas?
+                Autem, id ex est minima quam perspiciatis optio ab labore vitae eligendi sapiente animi officia tenetur qui iusto repellat ratione suscipit ad ducimus minus, enim corporis in facere? Eum, temporibus.</div>
+        </div>
+
+        
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
