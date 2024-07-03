@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box-1{
+            background-color: rgb(81, 110, 110);
+        }
+        .box-2{
+            background-color: rgb(93, 163, 163);
+        }
+        .box-3{
+            background-color: rgb(143, 206, 206);
+        }
+        .box-4{
+            background-color: rgb(155, 236, 236);
+        }
+        .box-1 , .box-2 ,.box-3,.box-4{
+            text-align: center;
+            color: rgb(73, 72, 72);
+            padding:1rem;
+        }
+        
+        
+    </style>
+</head>
+<body>
+   <!-- DISPLAY PROPERTY -->
+        <!-- d-none , d-inline, d-iline-block- , d-block , d-table , d-tabl-cell , d-table-cell , 
+        d-table-row , d-flex, d-inline-flex-->
+    <!-- On different Screen Sizes -->
+     <!-- d-lg-none -->
+      <div class="container">
+        <div class="box-1  d-md-inline-block">
+            <h1>Box</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="box-2 d-md-inline-block" d-inline-block>
+            <h1>Box</h1>
+            <p class="">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="box-3 d-md-inline-block">
+            <h1>Box</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="box-4 d-none  d-md-inline-block d-sm-block ">
+            <h1>Box</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="d-flex flex-column-reverse ">
+            <div class="box-1  ">
+                <h1>Box</h1>
+                <p class="d-print-none">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="box-2">
+                <h1>Box</h1>
+                <p class="d-print-none">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="box-3">
+                <h1>Box</h1>
+                <p class="d-print-none">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="box-4 d-none">
+                <h1>Box</h1>
+                <p class="d-print-none">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+      </div>
+      <p class="d-none d-print-block">This text will not be printed.</p>
+
+<!-- Print Display -->
+ <!--  -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
