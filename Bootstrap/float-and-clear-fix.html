@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear Fix</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box-1{
+            background-color: rgb(81, 110, 110);
+        }
+        .box-2{
+            background-color: rgb(93, 163, 163);
+        }
+        .box-3{
+            background-color: rgb(143, 206, 206);
+        }
+        .box-4{
+            background-color: rgb(155, 236, 236);
+        }
+        .box-1 , .box-2 ,.box-3,.box-4{
+            text-align: center;
+            color: rgb(224, 219, 219);
+            padding:1rem;
+        }
+        
+        
+    </style>
+</head>
+<body>
+   <div class="container clearfix">
+        <div class="w-25 box-1  float-start ">1</div>
+        <div class="w-25 box-2 float-end">2</div>
+   </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
