@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container-fluid bg-dark">
+        <div class="container py-4">
+            <!-- Form -->
+            <h1 class="text-info text-center">Forms</h1>
+            <form class="text-white" action="example.php" method="post">
+                <legend class="text-center display-6">Registeration Form</legend>
+                <div class="row row-cols-1  gy-3" >
+                    <div class="col-md-6 form-group me-1">
+                        <label class="mb-2 lead" for="name">Name</label>
+                        <input type="text" name="name" id="name" class="form-control">
+                    </div>
+                    <div class="col-md-6 form-group me-1">
+                        <label class="mb-2 lead"  for="password">Password</label>
+                        <input type="password" name="password" id="password" class="form-control">
+                        <small class="form-text text-white-50">You Passwoard should be Strong</small>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label class="mb-2 lead"  for="Country">Select A Country</label>
+                        <select  name="Country" id="Country" class="form-control">
+                            <option value="india">India</option>
+                            <option value="india">India</option>
+                            <option value="india">India</option>
+                            <option value="india">India</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 form-group me-1">
+                        <label class="mb-2 lead"  for="message">Message</label>
+                        <textarea name="message" id="message" class="form-control"></textarea>
+                    </div>
+                    <div class="col-md-6 form-group me-1">
+                        <label class="mb-2 lead" for="file">Upload a File:</label>
+                        <input type="file" name="file" id="file" class="form-control">
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <label class="mb-2 lead" for="age">Age</label>
+                        <input type="range" name="age" id="age" class="form-control ">
+                    </div>
+                    <div class="col-md-6 form-group me-1">
+                        <label class="mb-2 lead" >Gender:</label>
+                        <div class="form-check">
+                            <label for="male" class="form-check-label">Male</label>
+                            <input type="radio" name="gender" value="male" id="male" class="form-check-input">
+                        </div>
+                        
+                        <div class="form-check">
+                            <label for="Female" class="form-check-label">Female</label>
+                            <input type="radio" name="gender" value="Female" id="Female" class="form-check-input">
+                        </div>
+                        <div class="form-check">
+                            <label for="Other" class="form-check-label">Other</label>
+                            <input type="radio" name="gender" value="Other" id="Other" class="form-check-input">
+                        </div>
+                       
+                        
+                    </div>
+                    <div class="col-md-6 form-group me-1">
+                        <label class="mb-2 lead" >Corses:</label>
+                        <div class="form-check">
+                            <label for="web-dev" class="form-check-label">Web Development</label>
+                            <input type="checkbox" name="web-dev" id="web-dev" class="form-check-input">
+                        </div>
+                        
+                        <div class="form-check">
+                            <label for="AI" class="form-check-label">AI</label>
+                            <input type="checkbox" name="AI" id="AI" class="form-check-input">
+                        </div>
+                        <div class="form-check">
+                            <label for="digital-marketing" class="form-check-label">Digital Marketing</label>
+                            <input type="checkbox" name="digital-marketing" id="digital-marketing" class="form-check-input">
+                        </div>
+                       
+                        
+                    </div>
+                    <hr class="border border-info border-2 opacity-25 my-4">
+                </div>
+            </form>
+            <!-- Inline Form -->
+            <h1 class="text-info text-center">Inline Forms</h1>
+            <form class="text-white" action="" method="post">
+                <div class="row row-cols-2 justify-content-center gy-3">
+                    <div class="col-4">
+                        <input type="text" name="username" id="username" class="form-control" placeholder="Enter your Username">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" name="username" id="username" class="form-control" placeholder="Enter your Password">
+                        <small class="form-text text-white-50">Enter atleast 8 Charaters</small>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-outline-info">Log In</button>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input"> 
+                            <label for="" class="form-check-label">Study</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input"> 
+                            <label for="" class="form-check-label">Music</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input"> 
+                            <label for="" class="form-check-label">Coding</label>
+                        </div>
+                    </div>
+                    
+                </div>
+            </form>
+            <hr class="border border-info border-2 opacity-25 my-4">
+            <!--Horizontal Inline Form -->
+            <h1 class="text-info text-center">Horizontal Forms</h1>
+            <form class="row text-white justify-content-center gy-3 mt-3" action="" method="post">
+                <div class="col-8">
+                    <div class="form-group row ">
+                        <div class="col-3">
+                            <label class="mb-2 lead" for="name">Name</label>
+                        </div>
+                        <div class="col-5">
+                            <input type="text" name="name" id="name" class="form-control">
+                        </div>
+                </div>
+                </div>
+                <div class="col-8">
+                    <div class="form-group row">
+                        <div class="col-3">
+                            <label class="mb-2 lead" for="name">Passwoard</label>
+                        </div>
+                        <div class="col-5">
+                            <input type="text" name="name" id="name" class="form-control">
+                        </div>
+                </div>
+                </div>
+                <div class="col-8 mt-4">
+                    <div class="form-group row justify-content-center">
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-info">Submit</button>
+                        </div>
+                        
+                </div>
+                </div> 
+            </form>   
+                 
+        </div>
+    </div>
+</body>
+</html>
