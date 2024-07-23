@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+  <!-- Progress Bar -->
+    <div class="container bg-dark ">
+      <div class="row">
+        <div class="col-4 py-4">
+          <div class="progress mb-1">
+            <div class="progress-bar" style="width: 45%;">45%</div>
+          </div>
+          <div class="progress mb-1">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger " style="width: 67%;">67%</div>
+          </div>
+          <div class="progress mb-1">
+            <div class="progress-bar  bg-warning " style="width: 50%;">50%</div>
+            <div class="progress-bar  bg-info " style="width:3% ;">3%</div>
+            <div class="progress-bar  bg-danger " style="width: 23%;">20%</div>
+          </div>
+      </div>
+    </div>
+    <!-- Spinner -->
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <span class="spinner-border text-success spinner-border-lg"></span>
+          <span class="spinner-border text-danger" style="width: 50px; height: 50px;"></span>
+          <span class="spinner-grow text-white"></span>
+          <button class="ms-3 btn btn-danger disabled "><span class="me-1 spinner-border spinner-border-sm text-white"></span>Loading...</button>
+        </div>
+    </div>
+
+    <div class="ju"></div>
+</body>
+</html>
