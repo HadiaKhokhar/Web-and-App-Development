@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+    
+</head>
+<body>
+    <div class="container bg-dark">
+        <!-- Cards And its Styling -->
+      <div class="row gy-2 py-5">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Images/Castle-Image.jpg" class="card-img-top" alt="" >
+                <div class="card-body">
+                    <h4 class="card-title">Pemberley</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nesciunt.</p>
+                    <button type="button" class="btn btn-outline-danger">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center border-danger text-danger">
+              
+                <div class="card-body">
+                    <h4 class="card-title">Pemberley</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nesciunt.</p>
+                    <button type="button" class="btn btn-outline-danger">Read More</button>
+                </div>
+                <img src="Images/Castle-Image.jpg" class="card-img-bottom" alt="" >
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Images/Castle-Image.jpg" class="card-img" alt="" >
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white">
+                <img src="Images/Castle-Image.jpg" class="card-img" alt="" >
+                <div class="card-body">
+                    <div class="list-group list-group-flush ">
+                        <li class="list-group-item active">item 1</li>
+                        <li class="list-group-item">item 2</li>
+                        <li class="list-group-item">item 3</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Pemberley</h4>
+                    <h5 class="card-subtitle "> A fictional Countryside</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nesciunt.</p>
+                    <a href="" class="card-link">Read More</a>
+                </div>
+                <img src="Images/Castle-Image.jpg" class="card-img" alt="" >
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                   <ul class="nav nav-justified nav-pills ">
+                       <li class="nav-item"><a href="" class="nav-link active">Home</a></li>
+                       <li class="nav-item"><a href="" class="nav-link">About</a></li>
+                       <li class="nav-item"><a href="" class="nav-link">Features</a></li>
+                </ul>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Pemberley</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nesciunt.</p>
+                    <button type="button" class="btn btn-outline-danger">Read More</button>
+                </div>
+                <div class="card-footer">
+                    <img src="Images/Castle-Image.jpg" class="img-fluid" alt="" >
+                </div>
+               
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+             <div class="row">
+                 <div class="col-5 pe-0">
+                    <img src="Images/Castle-Image.jpg" class="card-img " alt="">
+                 </div>
+                 <div class="col-7 ps-0">
+                     <h4 class="card-header">Pemberley</h4>
+                     <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nesciunt.</p>
+                        <button type="button" class="btn btn-outline-danger">Read More</button>
+                     </div>
+                
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+      <!--Group Cards -->
+      <div class="row" data-masonry='{"percentPosition": true }' >
+        <div class="col">
+            <div class="card-group ">
+                <div class="card">
+                    <img src="Images/Castle-Image.jpg" class="card-img-top" alt="" >
+                    <div class="card-body">
+                        <h4 class="card-title">Pemberley</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nesciunt.</p>
+                        <button type="button" class="btn btn-outline-danger">Read More</button>
+                    </div>
+                </div>
+                <div class="card text-center border-danger text-danger">
+                    <div class="card-body">
+                        <h4 class="card-title">Pemberley</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nesciunt.</p>
+                        <button type="button" class="btn btn-outline-danger">Read More</button>
+                    </div>
+                    <img src="Images/Castle-Image.jpg" class="card-img-bottom" alt="" >
+                </div>
+                <div class="card">
+                <img src="Images/Castle-Image.jpg" class="card-img" alt="" >
+                </div>
+                <div class="card text-white">
+                <img src="Images/Castle-Image.jpg" class="card-img" alt="" >
+                <div class="card-body">
+                    <div class="list-group list-group-flush ">
+                        <li class="list-group-item active">item 1</li>
+                        <li class="list-group-item">item 2</li>
+                        <li class="list-group-item">item 3</li>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+      </div>
+        
+    </div>
+</body>
+</html>
