@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+            var tooltipElement = document.getElementById('tooltip');
+            var tooltip = new bootstrap.Tooltip(tooltipElement,{
+            html:true,
+            animation:false,
+            delay: { show: 100, hide: 1000 },
+            title:"<b>Cancel </b><img src='Images/Castle-Image.jpg' width='30px' height='30px'> Button" ,
+            placement:"right",
+            trigger:"click", 
+            offset: "20" 
+     
+           
+            
+
+
+        });
+        });
+    </script>
+</head>
+<body>
+    <!-- Requires popper js so include bootstrap js bundle(bootstrap.js + popper.js) -->
+     <!-- you have to incude a class , id, or a attribute like data-toggle="tooltip"
+      then write script for it like above to make it work  -->
+      <!-- you can the parameter like title , placement in script file too 
+       values for trigger is click focus and hover as default-->
+    <div class="container text-white">
+      <div class="row"> 
+        <div class="col mt-3">
+            <button class="btn btn-danger" data-bs-title="<b>Cancel </b><img src='Images/Castle-Image.jpg' width='30px' height='30px'> Button" data-bs-placement="bottom" id="tooltip">Cancel</button>
+       
+        </div>
+        
+    </div>
+</body>
+</html>
