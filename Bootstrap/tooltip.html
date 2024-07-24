@@ -8,22 +8,107 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script>
        document.addEventListener('DOMContentLoaded', function () {
+            // Variable of the elemnt with tooltip id 
+
             var tooltipElement = document.getElementById('tooltip');
+
+            // Applying tooltip plugin in the var tooltipElement
             var tooltip = new bootstrap.Tooltip(tooltipElement,{
             html:true,
-            animation:false,
-            delay: { show: 100, hide: 1000 },
+            // animation:false,
+            // delay: { show: 100, hide: 1000 },
             title:"<b>Cancel </b><img src='Images/Castle-Image.jpg' width='30px' height='30px'> Button" ,
             placement:"right",
-            trigger:"click", 
-            offset: "20" 
-     
-           
-            
+            // trigger:"click", 
+            // offset: "30" 
+
+        });
+
+        // EVENTS FOR TOOLTIP
+        // Alet message will be given when you will hover on the cancel button
+        tooltipElement.addEventListener('mouseenter', function() {
+                alert("Careful, you're hovering over the Cancel button!");
+            });
+
+
+
+
+        // for SHOW Fuction
+
+        // Creating the variable of the element by showbtn 
+        var showBtn = document.getElementById('showbtn');
+        // Applying show tooltip in the var showBtn
+        showBtn.addEventListener('click', function(){
+            tooltip.show();
+            });
+
+
+        // for HIDE Fuction
+
+        // Creating the variable of the element by hidebtn 
+        var hideBtn = document.getElementById('hidebtn');
+        // Applying hide tooltip in the var hideBtn
+        hideBtn.addEventListener('click', function(){
+            tooltip.hide();
+            });
+
+
+        // for Toggle Fuction
+
+        // Creating the variable of the element by togglebtn 
+        var toggleBtn = document.getElementById('togglebtn');
+        // Apply toogle fucntionlaity  in the var toggleBtn
+        toggleBtn.addEventListener('click', function(){
+            tooltip.toggle();
+            });
+
+
+        // for Dispose Fuction
+
+        // Creating the variable of the element by disposebtn 
+        var disposeBtn = document.getElementById('disposebtn');
+        // Apply dispose fucntionlaity  in the var disposeBtn
+        disposeBtn.addEventListener('click', function(){
+            tooltip.dispose();
+            });
+
+
+
+        // for Enable Fuction
+
+        // Creating the variable of the element by enabtn 
+        var enaBtn = document.getElementById('enabtn');
+        // Apply Enable fucntionlaity  in the var enaBtn
+        enaBtn.addEventListener('click', function(){
+            tooltip.enable();
+            });
+        
+
+        // for Disable Fuction
+
+        // Creating the variable of the element by disbtn 
+        var disBtn = document.getElementById('disbtn');
+        // Apply disable fucntionlaity  in the var disBtn
+        disBtn.addEventListener('click', function(){
+            tooltip.disable();
+            });
+
+
+        // for Toggle Enabled Fuction
+
+        // Creating the variable of the element by togEnabtn 
+        var togEnaBtn = document.getElementById('togEnabtn');
+        // Apply toggle enabled and disbaled fucntionlaity  in the var togEnaBtn
+        togEnaBtn.addEventListener('click', function(){
+            tooltip.toggleEnabled();
+            });
+        
+
 
 
         });
-        });
+
+
     </script>
 </head>
 <body>
@@ -32,11 +117,60 @@
       then write script for it like above to make it work  -->
       <!-- you can the parameter like title , placement in script file too 
        values for trigger is click focus and hover as default-->
-    <div class="container text-white">
-      <div class="row"> 
-        <div class="col mt-3">
+    <div class="container">
+      <div class="row gy-3 py-3  justify-content-center"> 
+        <div class="col">
             <button class="btn btn-danger" data-bs-title="<b>Cancel </b><img src='Images/Castle-Image.jpg' width='30px' height='30px'> Button" data-bs-placement="bottom" id="tooltip">Cancel</button>
-       
+        </div>
+        <h1>Methods In Tooltip</h1>
+        <div class="card col-3 bg-danger">
+            <div class="card-body"> 
+                <h4>Show</h4>
+                <p>From the fuction i have written if i click on this button the tooltip on the above Cancel button should open</p>
+                <button class="btn btn-dark w-50" id="showbtn" >Show</button>
+            </div>
+        </div>
+        <div class="card col-3 bg-danger mx-3">
+            <div class="card-body"> 
+                <h4>Hide</h4>
+                <p>From the fuction i have written if i click on this button the tooltip on the above Cancel button would hode the tooltip</p>
+                <button class="btn btn-dark w-50" id="hidebtn" >Show</button>
+            </div>
+        </div>
+        <div class="card col-3 bg-danger ">
+            <div class="card-body"> 
+                <h4>Toggle</h4>
+                <p>From the fuction i have written if i click on this button the tooltip on the above Cancel button would open and close when i  click again like a toggle</p>
+                <button class="btn btn-dark w-50" id="togglebtn" >Show</button>
+            </div>
+        </div>
+        <div class="card col-3 bg-danger">
+            <div class="card-body"> 
+                <h4>Dispose</h4>
+                <p>From the fuction i have written if i click on this button the tooltip on the above Cancel button will dispose</p>
+                <button class="btn btn-dark w-50" id="disposebtn" >Show</button>
+            </div>
+        </div>
+        <div class="card col-3 bg-danger mx-3">
+            <div class="card-body"> 
+                <h4>Enable</h4>
+                <p>From the fuction i have written if i click on this button the tooltip on the above Cancel button will be enabled</p>
+                <button class="btn btn-dark w-50" id="enabtn" >Show</button>
+            </div>
+        </div>
+        <div class="card col-3 bg-danger">
+            <div class="card-body"> 
+                <h4>Disable</h4>
+                <p>From the fuction i have written if i click on this button the tooltip on the above Cancel button will be disabled even though you clicked on the show button it won't show until you enable it</p>
+                <button class="btn btn-dark w-50" id="disbtn" >Show</button>
+            </div>
+        </div>
+        <div class="card col-3 bg-danger">
+            <div class="card-body"> 
+                <h4>ToggleEnabled</h4>
+                <p>From the fuction i have written it work like the same as toggle button but it show and hide on click and that  button enable and disbled the tooltip on click</p>
+                <button class="btn btn-dark w-50" id="togEnabtn" >Show</button>
+            </div>
         </div>
         
     </div>
