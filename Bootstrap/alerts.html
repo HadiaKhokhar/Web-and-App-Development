@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/2e3e284156.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function (){
+
+        // Variable for close btn and red alert
+        var RedBoxAlert = document.getElementById('redalert');
+        var CloseBtn = document.getElementById('closeBtn')
+
+
+
+        CloseBtn.addEventListener('click',function(){
+            RedBoxAlert.style.display='none';
+        })
+           
+            
+        
+        })
+       
+
+    </script>
+</head>
+<body>
+    <div class="container bg-dark text-white py-5" >
+        <h2 class="text-center">Bootstrap Alerts</h2>
+      <div class="row mt-5 justify-content-center">
+        <div class="col-auto ">
+          <div class=" alert alert-danger">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit fuga vel facilis similique ea numquam quasi asperiores vero voluptas aut!?
+            <button class="btn-close" data-bs-dismiss="alert"></button>
+          </div>
+        </div>
+        <div class="col-auto ">
+            <div class=" alert alert-success">
+                <h5 class="alert-heading">heading goes here <button class="btn-close" data-bs-dismiss="alert"></button></h5> 
+                <hr>
+                <p>Lorem ipsum dolor <a class="alert-link"  href="">sit amet consectetur, adipisicing elit</a> Impedit fuga vel facilis similique ea numquam quasi asperiores vero voluptas aut!?</p>     
+                
+            </div>
+        </div>
+        <div class="col-auto ">
+            <div id="redalert" class=" alert alert-dark">
+                <h5>heading goes here </h5> 
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit fuga vel facilis similique ea numquam quasi asperiores vero voluptas aut!?</p>      
+              </div>
+        </div>
+        <button class="w-25  btn btn-danger" id="closeBtn">Close Alert</button>
+      </div>
+    </div>
+</body>
+</html>
