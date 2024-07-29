@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/2e3e284156.js" crossorigin="anonymous"></script>
+    <style>
+       .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+            background-color:rgb(94, 155, 38);
+            color:rgb(49, 47, 47)
+        }
+        .nav-link{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container bg-dark text-white py-5" >
+        <div class="row gy-4">
+            <div class="col-md-6">
+                <h3> Tabs</h3>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a href="#home" class="nav-link active" data-bs-toggle="tab">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link"  data-bs-toggle="tab">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" data-bs-toggle="tab">Contact</a></li>
+                </ul>
+                <div class="tab-content py-4">
+                    <div class="tab-pane active fade show" id="home">
+                        <h5>this heading page</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, aliquid?</p>
+                    </div>
+                    <div class="tab-pane" id="about">
+                        <h5>About</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, aliquid?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nisi.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="contact">
+                        <h5>Contact</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, aliquid?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente facere harum possimus quaerat eveniet voluptas odit accusantium animi adipisci. Vel at, porro cum consectetur laboriosam provident dolore est voluptates?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Pills Tabs</h3>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#home1" class="nav-link active" data-bs-toggle="tab">Home</a></li>
+                    <li class="nav-item"><a href="#about1" class="nav-link" data-bs-toggle="tab">About</a></li>
+                    <li class="nav-item"><a href="#contact1" class="nav-link" data-bs-toggle="tab">Contact</a></li>
+                </ul>
+                <div class="tab-content py-4">
+                    <div class="tab-pane fade show active" id="home1">
+                        <h5>This is the home page</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, aliquid?</p>
+                    </div>
+                    <div class="tab-pane fade" id="about1">
+                        <h5>About</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, aliquid?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nisi.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="contact1">
+                        <h5>Contact</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, aliquid?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente facere harum possimus quaerat eveniet voluptas odit accusantium animi adipisci. Vel at, porro cum consectetur laboriosam provident dolore est voluptates?
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-2">
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item"><a href="#home2" class="nav-link active" data-bs-toggle="tab">Home</a></li>
+                            <li class="nav-item"><a href="#about2" class="nav-link" data-bs-toggle="tab">About</a></li>
+                            <li class="nav-item"><a href="#contact2" class="nav-link" data-bs-toggle="tab">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-8" style="background-color: rgb(70, 68, 68);">
+                        <div class="tab-content py-4">
+                            <div class="tab-pane fade show active" id="home2">
+                                <h5>This is the home page</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, aliquid?</p>
+                            </div>
+                            <div class="tab-pane fade" id="about2">
+                                <h5>About</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, aliquid?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nisi.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="contact2">
+                                <h5>Contact</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, aliquid?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente facere harum possimus quaerat eveniet voluptas odit accusantium animi adipisci. Vel at, porro cum consectetur laboriosam provident dolore est voluptates?
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
