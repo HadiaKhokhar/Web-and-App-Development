@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</head>
+<body>
+  <!-- data artibute should go on element on which the scroll will happen : data-bs-spy="scroll" -->
+   <!-- Id should be created on navbar and passed onto the scrolling content element  -->
+
+   <!-- Use offset artibute to set when should the each page shlould highlted in px 
+    means if it is set to 200 to topic-3 then the page in nav willbe highted 200ox before it reahes the id of topic3 : data-offset="200"-->
+
+    <div class="container bg-dark text-white py-5" >
+      <div class="row justify-content-evenly">
+        <div class="col-3 p-0" id="my-list" >
+            <div class="list-group">
+                <a href="#topic1"  class="list-group-item list-group-item-danger active">Topic 1</a>
+                <a href="#topic2" class="list-group-item list-group-item-danger">Topic 2</a>
+                <a href="#topic3" class="list-group-item list-group-item-danger">Topic 3</a>
+                <a href="#topic4" class="list-group-item list-group-item-danger">Topic 4</a>
+            </div>
+        </div>
+        <div class="col-8 px-5 py-3 overflow-scroll" data-bs-spy="scroll"  data-target="#my-list"   style="background-color: rgb(61, 59, 59); height: 300px;">
+          <div id="topic1"  >
+            <h5>HEADING 1</h5>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam alias ad hic consequuntur consequatur debitis repudiandae numquam necessitatibus autem at ducimus, corporis unde labore voluptates fuga modi omnis, possimus perferendis.
+            Quis aliquid incidunt quo modi consectetur molestias consequuntur aliquam omnis, voluptates ad dolorum nisi temporibus hic, eum labore accusantium dignissimos exercitationem. Iste, expedita a aliquid at reiciendis veniam quas unde.
+            Eligendi beatae asperiores accusantium totam esse provident impedit, itaque tempore dolorem. Ab eum recusandae quas, esse cumque autem dignissimos, nostrum facilis nisi quod voluptatum ullam, dolores sunt excepturi iste alias!</p>
+          </div>
+          <div id="topic2" >
+            <h5>HEADING 2</h5>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam alias ad hic consequuntur consequatur debitis repudiandae numquam necessitatibus autem at ducimus, corporis unde labore voluptates fuga modi omnis, possimus perferendis.
+            Quis aliquid incidunt quo modi consectetur molestias consequuntur aliquam omnis, voluptates ad dolorum nisi temporibus hic, eum labore accusantium dignissimos exercitationem. Iste, expedita a aliquid at reiciendis veniam quas unde.
+            Eligendi beatae asperiores accusantium totam esse provident impedit, itaque tempore dolorem. Ab eum recusandae quas, esse cumque autem dignissimos, nostrum facilis nisi quod voluptatum ullam, dolores sunt excepturi iste alias!</p>
+          </div>
+          <div id="topic3" >
+            <h5>HEADING 3</h5>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam alias ad hic consequuntur consequatur debitis repudiandae numquam necessitatibus autem at ducimus, corporis unde labore voluptates fuga modi omnis, possimus perferendis.
+            Quis aliquid incidunt quo modi consectetur molestias consequuntur aliquam omnis, voluptates ad dolorum nisi temporibus hic, eum labore accusantium dignissimos exercitationem. Iste, expedita a aliquid at reiciendis veniam quas unde.
+            Eligendi beatae asperiores accusantium totam esse provident impedit, itaque tempore dolorem. Ab eum recusandae quas, esse cumque autem dignissimos, nostrum facilis nisi quod voluptatum ullam, dolores sunt excepturi iste alias!</p>
+          </div>
+          <div id="topic4">
+            <h5>HEADING  4</h5>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam alias ad hic consequuntur consequatur debitis repudiandae numquam necessitatibus autem at ducimus, corporis unde labore voluptates fuga modi omnis, possimus perferendis.
+            Quis aliquid incidunt quo modi consectetur molestias consequuntur aliquam omnis, voluptates ad dolorum nisi temporibus hic, eum labore accusantium dignissimos exercitationem. Iste, expedita a aliquid at reiciendis veniam quas unde.
+            Eligendi beatae asperiores accusantium totam esse provident impedit, itaque tempore dolorem. Ab eum recusandae quas, esse cumque autem dignissimos, nostrum facilis nisi quod voluptatum ullam, dolores sunt excepturi iste alias!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
