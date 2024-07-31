@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toasts</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/2e3e284156.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function (){
+            var helpBox = new bootstrap.Toast(document.getElementById('mytoast'));
+            var helpshowBtn = document.getElementById('help-btn');
+            var helpcloseBtn = document.getElementById('help-close-btn');
+
+            helpcloseBtn.addEventListener('click', function(){
+                helpBox.hide();
+                alert("You sure you don't need any help?");
+            });
+
+            helpshowBtn.addEventListener('click', function(){
+                helpBox.show();
+            });
+
+           
+        });
+
+    </script>
+</head>
+<body>
+    <div class="container-fluid bg-dark vh-100" >
+        <div class="row">
+            <div class="w-auto"  style="position:absolute ;left:76%; top:3%;">
+                <!-- For delaying the toast artibute:  Data-bs-delay="3000" -->
+                <div class="toast" id="mytoast" data-bs-autohide="false" >
+                    <!-- Taost Header -->
+                    <div class="toast-header">
+                        <img  src="Images/Female-icon(yellow-shirt).png" alt="" style="width: 30px;">
+                        <h5  class="d-inline ms-2 w-auto ">Hey There! It's Ashley</h5>
+                        <button class="close ms-auto border-0" data-bs-dismiss="toast">
+                            <i class="fa-solid fa-close"></i>
+                        </button>
+                    </div>
+                    <!-- Toast Body -->
+                    <div class="toast-body ">
+                        <div class="row flex-column ">
+                            <div class="col mb-5">
+                                <p class="lead">
+                                    Greetings, How can i help you today?
+                                </p>
+                            </div>
+                            <div class="col text-white">
+                                <div class="mb-3">
+                                    <button type="button" class="btn btn-info text-white">
+                                        How to Register?
+                                    </button>
+                                    <button type="button" class="btn btn-info text-white">
+                                        How to Login?
+                                    </button>
+                                    <button type="button" class="btn btn-info text-white mt-2">
+                                        Reset Password
+                                    </button>
+                                    <button type="button" class="btn btn-info text-white mt-2">
+                                        Contact Support
+                                    </button>
+                                    <button type="button" class="btn btn-info text-white mt-2">
+                                        How to Logout
+                                    </button>
+                                </div>
+                                <div class="">
+                                    <div class="row ">
+                                        <div class="col-auto align-content-center">
+                                            <button class="border-0 rounded-4 "><i class="fa fa-add"></i></button>
+                                        </div>
+                                        <div class="px-0 col-8">
+                                            <input type="text" class="form-control" placeholder="Ask something">
+                                        </div>
+                                        <div class="col-auto align-content-center">
+                                            <button class="border-0 rounded-4 "><i class="fa fa-send"></i></button>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                          
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+            <!-- Ask For help button -->
+             <div>
+                <button class="col-auto btn btn-info text-white " id="help-btn" style="position:absolute ;left:86%; bottom:3%;">
+                    <i class="fa-solid fa-question-circle me-1"></i> Get Help From Ashley
+                </button>
+                <button class="col-auto btn btn-danger d-block mt-3 " id="help-close-btn" style="position:absolute ;left: 1%;  bottom:3%;" >
+                    <i class="fa-solid fa-close me-1"></i> Close Help
+                </button>
+             </div>
+            
+
+           
+      </div>
+    </div>
+</body>
+</html>
