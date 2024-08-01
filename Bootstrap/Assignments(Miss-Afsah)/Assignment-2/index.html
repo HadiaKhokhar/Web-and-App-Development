@@ -3,66 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Header</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Site Logo</title>
+    <link rel="shortcut icon" href="Images/SiteLogo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2e3e284156.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-
-                <!-- LOGO -->
-                <div>
-                    <img  class="navbar-brand" src="Assets/images/SiteLogo.png" alt="">
-                </div>
-                <!-- Menu button -->
-                <div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <!-- Linkd to Pages and socials -->
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <!-- PAGES  -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-7 ">
-                        <!-- Page 1 -->
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <!-- Page 2 -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <!-- Page 3 -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Product
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">New Collection</a></li>
-                                <li><a class="dropdown-item" href="#">Shirts</a></li>
-                                <li><a class="dropdown-item" href="#">Caps</a></li>
-                            </ul>
-                        </li>
-                        <!-- Page 4 -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>    
+    <!-- Header Starts -->
+    <header class="container-fluid" style="background-color: rgb(246,242,255);">
+        <div class="container">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg py-3 ">
+            <!-- LOGO -->
+            <div class="navbar-brand">
+              <img src="Images/SiteLogo.png" alt="">
             </div>
+            <!-- Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fa-solid fa-bars"></span>
+            </button>
+            <!-- Links -->
+            <div class="collapse navbar-collapse fw-medium" id="navbarSupportedContent">
+              <!-- Page links -->
+              <div class="col-lg-7 col-xl-6 ms-auto" >
+                <ul class="navbar-nav justify-content-lg-around mb-2 mb-lg-0 me-lg-5">
+                  <li class="nav-item ">
+                    <a class="nav-link" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#" role="button">
+                      Pricing
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Gallery</a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link">Team</a>
+                  </li>  
+                </ul>
+              </div>
+              <!-- Button -->
+              <div class="col-5 col-sm-3 col-md-2 ms-lg-2 ms-xl-4 ">
+                <button class="w-100 btn fw-medium" 
+                style="
+                background: radial-gradient(circle at 100% 100%, #f6f2ff 0, #f6f2ff 3px, transparent 3px) 0% 0%/4px 4px no-repeat,
+                radial-gradient(circle at 0 100%, #f6f2ff 0, #f6f2ff 3px, transparent 3px) 100% 0%/4px 4px no-repeat,
+                radial-gradient(circle at 100% 0, #f6f2ff 0, #f6f2ff 3px, transparent 3px) 0% 100%/4px 4px no-repeat,
+                radial-gradient(circle at 0 0, #f6f2ff 0, #f6f2ff 3px, transparent 3px) 100% 100%/4px 4px no-repeat,
+                linear-gradient(#f6f2ff, #f6f2ff) 50% 50%/calc(100% - 2px) calc(100% - 8px) no-repeat,
+                linear-gradient(#f6f2ff, #f6f2ff) 50% 50%/calc(100% - 8px) calc(100% - 2px) no-repeat,
+                linear-gradient(90deg, #af53e0 43%, #4a57b9 100%);
+                border-radius: 4px;
+                box-sizing:border-box;">Contact Us</button>
+              </div>
+
+            </div>
+          </nav>
+          <!-- Hero Section -->
+           <div class="container py-4 py-xl-5">
+            <div class="row align-items-center py-lg-5 gy-5">
+              <!-- Text Section -->
+              <div class="col-12  col-lg-7 col-xxl-6  align-self-xxl-start ">
+                <div class="mt-2" style="color:#31135b">
+                  <h1 class="display-5 fw-bold">Launch your own online<h1>
+                  <h1 class="display-5 fw-bold">Learning platform</h1>
+                  <h1 class="display-5 fw-bold" style="color: #af53e0;">for FREE</h1>
+                </div>
+                <p class="col-11 col-md-8 col-lg-10 text-muted  mt-2 mt-sm-3 mt-lg-4 ">
+                  Top Teachers form around the world teach thounds of students
+                  Get unlimited access to 1000+ courses
+                </p>
+                <button class=" btn text-white col-7 col-md-5 col-lg-4 mt-2 mt-sm-3 mt-lg-4  py-2" style="border-radius: 4px ; 
+               background: rgb(99,65,200);
+               background: linear-gradient(273deg, rgba(99,65,200,1) 0%, rgba(74,118,230,1) 78%);">
+                  Get Started
+                </button>
+              </div>
+              <!-- Image Section -->
+               <div class="col-12 col-md-9 col-lg-5 col-xxl-6 mx-md-auto mx-2">
+                <img class="img-fluid" src="Images/Laptop.webp" alt=""
+                style=" filter: drop-shadow(-6px 15px 30px rgba(128, 0, 128, 0.5)); /* Purple color shadow */">
+               </div>
+            </div>
+           </div>
+            
         </div>
-    </nav>    
-
-
-
-
-
-
-
-
-
-
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    </header>
+    <!-- Header Ends  -->
 </body>
 </html>
