@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<style>
+#btn{
+    padding: 20px;
+    border-radius: 7px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+ } 
+ #ounces,#grams{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+ }
+#help{
+    width : 50px;
+    height : 50px;
+    border-radius: 50%;
+    background-color: rgb(115, 115, 197);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    align-content: center;
+} 
+#help-tooltip{
+    display: none;
+    padding: 10px;
+    background-color: rgb(240, 237, 237);
+    color:rgb(115, 115, 197); ;
+}
+#password_length_error{
+    display: none;
+}
+.hidden{
+    display:none;
+}
+.fontBig{
+    font-size: 3rem;
+}
+.changeColor{
+    color: #4CAF50;
+}
+
+</style>
+<body>
+
+    <a href="javascript:void(0)" onclick="alert('hi')" style="font-size: 2.5rem;display: block;">Click</a>
+    <a href="javascript:void(0)" onclick="askQuestion('Favourite Animal')" style="font-size: 2.5rem;">Ask me any Question?</a>
+    
+    <img src="Images/img-1.jpg" alt="" id="img" width="300px"
+        onmouseover="document.querySelector('#img').src = 'Images/img-2.jpeg'""
+        onmouseout="document.querySelector('#img').src = 'Images/img-1.jpg'"">
+    <input type="email" id="email" style="display: block; padding: 10px 20px; margin-top: 10px;" placeholder="Enter your email" onBlur="validateEmail()">
+    <p></p>
+    <input type="password" name="password" id="password" style="display: block; padding: 10px 20px; margin-top: 10px;" >
+    <p id="password_length_error"></p>
+    <button id="btn" onclick="changeBG('pink')">Click me and change the body color</button>
+    <input type="text" id="ounces" onBlur="toGrams();"
+    placeholder="Enter weight in ounces">
+    <input type="text" id="grams" placeholder="Ounces in grams" readonly>
+    <p></p>
+    <p id="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, aliquid.
+    </p>
+    <div id="help" oonm>
+        ?
+    </div>
+    <p id="help-tooltip">help button</p>
+
+    <form>
+        Email:
+        <input type="text" id="user-email">
+        <input type="password" name="password" id="password">
+        <label>
+            <input type="checkbox" name="showPassword" id="showPassword"> Show Password
+        </label><br>
+        <input type="submit" value="Submit">
+    </form>
+  
+    <img src="Images/img-2.jpeg" alt="" id="h-image" >
+    <button id="h-img-button">Hide the above Image</button> 
+    <script>
+        var passwordToggler = document.querySelector('#showPassword');
+    var password = document.querySelector('#password');
+    function passwordChecker(){
+        if (passwordToggler.checked){
+            password.type = 'text'
+        }
+        else{
+            password.type = 'password'
+        }
+    }
+    passwordToggler.addEventListener('change', passwordChecker)
+    
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
