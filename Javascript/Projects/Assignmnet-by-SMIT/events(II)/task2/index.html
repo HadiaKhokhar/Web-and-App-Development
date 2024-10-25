@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+
+<body>
+    <h1>SQL Injection: Understanding the Threat and Its Impact</h1>
+    <p id="para">
+        SQL Injection is a common cybersecurity vulnerability that allows attackers to interfere with the queries that
+        an application makes to its database. This can enable unauthorized access to sensitive data, such as customer
+        information, passwords, and credit card details. SQL Injection occurs when an application doesn’t properly
+        sanitize or validate user inputs, allowing malicious code to be executed within the SQL database.
+    </p>
+    <a href="javascript:void(0)" class="btn" id="readmore">Read More</a>
+    <script>
+        const btn = document.getElementsByClassName('btn')[0];
+        const para = document.getElementById('para')
+        btn.addEventListener('click',function (){
+            if (btn.id === "readmore") {
+                para.innerHTML += `<br/> One of the most significant dangers of SQL Injection is data theft, which can result in severe consequences for both users and businesses. Through SQL Injection attacks, cybercriminals can view, modify, and delete database records, causing financial and reputational damage. Moreover, if attackers gain administrative privileges, they may even be able to compromise the entire database server.<br/>With SQL Injection, attackers exploit vulnerabilities in web applications that fail to properly secure user input fields. For example, login forms, search boxes, and other text fields are common areas where attackers may input malicious code, hoping to manipulate the underlying SQL commands. Preventing SQL Injection requires a combination of secure coding practices, input validation, and the use of parameterized queries, which help prevent unauthorized SQL commands from being executed.`
+                btn.textContent = "See Less"
+                btn.id = "seeless"
+            }else {
+                para.textContent = "SQL Injection is a common cybersecurity vulnerability that allows attackers to interfere with the queries that an application makes to its database. This can enable unauthorized access to sensitive data, such as customer information, passwords, and credit card details. SQL Injection occurs when an application doesn’t properly sanitize or validate user inputs, allowing malicious code to be executed within the SQL database.";
+                btn.textContent = "Read More";
+                btn.id = "readmore";
+
+            }
+        }
+    )
+
+
+
+
+    </script>
+</body>
+
+</html>
