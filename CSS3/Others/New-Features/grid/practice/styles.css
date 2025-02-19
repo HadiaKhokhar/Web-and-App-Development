@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.grid-container {
+    width: 80%;
+    height: 400px;
+    background-color: white;
+    display:grid;
+    grid-template-columns: repeat(2,200px) auto; 
+    grid-template-rows: 100px auto;
+    gap: 10px;
+}
+
+.item {
+    background-color: lightblue;
+    border: 2px solid navy;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item3{
+    grid-column: 2/4; /* 2 is the number on which you want your column and 4 is the number of columns you want to span (the postion of the column + total column you  want to span)*/
+    grid-row: 1;
+}
+
+/* You handle the grid part */
