@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add your CSS styles here */
+        button{
+            padding: 10px;
+            font-size: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button>Click me to open a Window</button>
+    <a href="page.html" target="NewWindow">Open in Popup Window</a>
+
+    <script>
+        // var newWindow =  window.open("", "New Window");
+    //    var newWin = window.open("monk.html", "win1", "width=420,height=380,scrollbars=yes,toolbar=no");
+    var btn  = document.querySelector('button')
+    btn.addEventListener('click',function(){
+        window.open("https://www.amazon.com","NewWindow","width=500,height=400,left=150,top=100,scrollbars=no,toolbar=yes")
+    })
+    
+    function checkForPopBlocker() {
+    var testPop = window.open("", "", "width=100,height=100");
+    if (testPop === null) {
+        alert("Please disable your popup blocker.");
+    }
+    testPop.close();
+}
+    checkForPopBlocker()
+    </script>
+</body>
+</html>
+
+
+
+ 
